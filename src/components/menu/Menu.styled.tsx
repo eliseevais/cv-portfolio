@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { myTheme } from "../../styles/Theme.styled";
 
 export const Menu = () => {
   return (
@@ -23,18 +24,17 @@ const MenuStyled = styled.nav`
   ul {
     display: flex;
     gap: 30px;
-    color: #FFFFFF;
     font-family: "Poppins";
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
 
     a {
-      color: #989898;
+      color: ${myTheme.colors.accentB};
     }
 
     a:active {
-      color: #FFFFFF;
+      color: ${myTheme.colors.accentA};
     }
   }
 `
