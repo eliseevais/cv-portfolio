@@ -22,7 +22,7 @@ export const Main = () => {
 };
 
 const MainStyled = styled.div`
-  background-color: ${myTheme.colors.background};
+  background-color: ${myTheme.colors.backgroundA};
   color: ${myTheme.colors.accentA};
   height: 900px;
 

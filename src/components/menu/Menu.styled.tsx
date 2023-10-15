@@ -2,19 +2,21 @@ import React from "react";
 import styled from "styled-components";
 import { myTheme } from "../../styles/Theme.styled";
 
-export const Menu = () => {
+type MenuPropsType = {
+  menuItems: Array<string>;
+};
+
+export const Menu = (props: MenuPropsType) => {
   return (
     <MenuStyled>
       <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Porfolio</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
+        {props.menuItems.map((item, index) => {
+          return (
+            <li key={index}>
+              <a href="#">{item}</a>
+            </li>
+          );
+        })}
       </ul>
     </MenuStyled>
   );
@@ -37,4 +39,4 @@ const MenuStyled = styled.nav`
       color: ${myTheme.colors.accentA};
     }
   }
-`
+`;

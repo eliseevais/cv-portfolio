@@ -4,6 +4,8 @@ import { Menu } from "../../components/menu/Menu.styled";
 import { FlexWrapper } from "../../components/FlexWrapper.styled";
 import { myTheme } from "../../styles/Theme.styled";
 
+const items = ["Home", "Portfolio", "Contact"]
+
 export const Header = (props: any) => {
   return (
     <HeaderStyled>
@@ -11,7 +13,7 @@ export const Header = (props: any) => {
         <a href="#">
           <LogoStyled>Irina Eliseeva</LogoStyled>
         </a>
-        <Menu />
+        <Menu menuItems={items}/>
       </FlexWrapper>
     </HeaderStyled>
   );
@@ -20,8 +22,8 @@ export const Header = (props: any) => {
 const HeaderStyled = styled.header`
   width: 100%;
   height: 110px;
-  background-color: ${myTheme.colors.background};
-  padding: 70px 114px 0 114px;
+  background-color: ${myTheme.colors.backgroundA};
+  padding: 70px 120px 0 120px;
 
   a {
     text-decoration: none;

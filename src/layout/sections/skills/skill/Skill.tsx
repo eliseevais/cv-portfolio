@@ -1,6 +1,6 @@
 import React from "react";
-import { Icon } from "../../../components/menu/icon/Icon";
-import { myTheme } from "../../../styles/Theme.styled";
+import { Icon } from "../../../../components/menu/icon/Icon";
+import { myTheme } from "../../../../styles/Theme.styled";
 import styled from "styled-components";
 
 type SkillPropsType = {
