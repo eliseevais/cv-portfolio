@@ -46,7 +46,7 @@ const MainStyled = styled.div`
     width: 280px;
     height: 72px;
     border-radius: 10px;
-    background: linear-gradient(180deg, #15B9B9 50%, #3C1DFF);
+    background: linear-gradient(180deg, ${myTheme.colors.brightA} 50%, ${myTheme.colors.brightB});
     color: ${myTheme.colors.accentA};
     font-family: "Poppins";
     font-weight: 400;
@@ -60,7 +60,7 @@ const MainStyled = styled.div`
 
 const PhotoStyled = styled.img`
   width: 560px;
-  height: 800px;
+  min-height: 800px;
   object-fit: cover;
 `;
 
@@ -69,6 +69,6 @@ const MainTitle = styled.h1`
   font-weight: 300;
   font-size: 20px;
   line-height: 30px;
-  letter-spacing: 1.5%;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
 `
