@@ -21,7 +21,7 @@ export const Header = (props: any) => {
 
 const HeaderStyled = styled.header`
   width: 100%;
-  height: 110px;
+  height: 120px;
   background-color: ${myTheme.colors.backgroundA};
   padding: 70px 120px 0 120px;
 

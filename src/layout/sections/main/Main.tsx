@@ -8,7 +8,7 @@ import { Header } from "../../header/Header.styled";
 export const Main = () => {
   return (
     <MainStyled>
-      <FlexWrapper align={"center"} justify={"space-around"}>
+      <FlexWrapper align={"center"} justify={"space-between"}>
         <div>
           <span>welcome</span>
           <h2>I'm Irina  <br /> Eliseeva</h2>
@@ -24,7 +24,7 @@ export const Main = () => {
 const MainStyled = styled.div`
   background-color: ${myTheme.colors.backgroundA};
   color: ${myTheme.colors.accentA};
-  height: 900px;
+  padding: 0 120px 120px 120px;
 
   span {
     font-family: "Poppins";

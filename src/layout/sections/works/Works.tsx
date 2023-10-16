@@ -14,7 +14,7 @@ export const Works = () => {
   return (
     <WorksStyled>
       <SectionTitle>My work experience</SectionTitle>
-      <FlexWrapper justify={"space-evenly"}>
+      <FlexWrapper justify={"space-between"}>
         <Work title={"Social network"} text={"Lorem"} src={socialNetwork} />
         <Work title={"Task tracker"} text={"Lorem"} src={toDoList} />
       </FlexWrapper>
@@ -23,6 +23,6 @@ export const Works = () => {
 };
 
 const WorksStyled = styled.section`
-  min-height: 960px;
   background-color: ${myTheme.colors.backgroundA};
+  padding: 120px;
 `;
