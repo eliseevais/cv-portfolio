@@ -18,7 +18,6 @@ export const Skill = (props: SkillPropsType) => {
 };
 
 const SkillStyled = styled.section`
-  /* background-color: ${myTheme.colors.backgroundB}; */
   color: ${myTheme.colors.accentA};
 `;
 

@@ -33,6 +33,10 @@ const Pagination = styled.div`
     width: 10px;
     height: 10px;
     margin: 40px 5px 5px 5px;
-    background-color: ${myTheme.colors.accentB};
+    background: linear-gradient(
+    180deg,
+    ${myTheme.colors.brightA} 50%,
+    ${myTheme.colors.brightB}
+  );;
   }
 `

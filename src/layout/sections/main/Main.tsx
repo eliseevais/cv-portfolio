@@ -52,7 +52,7 @@ const MainStyled = styled.div`
     font-weight: 400;
     font-size: 26px;
     line-height: 38px;
-    letter-spacing: 5%;
+    letter-spacing: 3px;
     margin-top: 34px;
     cursor: pointer;
   }

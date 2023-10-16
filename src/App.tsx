@@ -7,6 +7,7 @@ import { Skills } from "./layout/sections/skills/Skills";
 import { Works } from "./layout/sections/works/Works";
 import { Testimony } from "./layout/sections/testimony/Testimony";
 import { Contacts } from "./layout/sections/contacts/Contacts.styled";
+import { Footer } from "./layout/footer/Footer.styled";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Works />
       <Testimony />
       <Contacts />
+      <Footer />
     </AppBox>
   );
 }

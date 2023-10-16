@@ -5,6 +5,9 @@ import { myTheme } from "../../../styles/Theme.styled";
 
 type IconPropsType = {
   iconId: string;
+  height?: string;
+  width?: string;
+  viewbox?: any
 };
 
 export const Icon = (props: IconPropsType) => {

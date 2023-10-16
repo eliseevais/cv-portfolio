@@ -23,7 +23,6 @@ export const Skills = () => {
 
 const SkillsStyled = styled.section`
   background-color: ${myTheme.colors.backgroundB};
-  min-height: 600px;
   display: flex;
   flex-direction: column;
   padding: 120px;
