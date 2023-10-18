@@ -11,22 +11,22 @@ import { Footer } from "./layout/footer/Footer.styled";
 
 function App() {
   return (
-    <AppBox className="App">
+    <AppWraper className="App">
       <Header />
-      <Main/>
+      <Main />
       <Skills />
       <Works />
       <Testimony />
       <Contacts />
       <Footer />
-    </AppBox>
+    </AppWraper>
   );
 }
 
 export default App;
 
-const AppBox = styled.div`
-  width: 1440px;
-  min-height: 100vh;
-  margin: 0 auto;
-`
+const AppWraper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;

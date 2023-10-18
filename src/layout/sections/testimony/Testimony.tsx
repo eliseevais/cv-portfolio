@@ -8,35 +8,45 @@ import { Slider } from "../../../components/slider/Slider.styled";
 
 export const Testimony = () => {
   return (
-    <TestimonyStyled>
-      <FlexWrapper direction="column" justify="space-between" align="center">
-        <SectionTitle>My priority</SectionTitle>
-        <Slider />
-        <Pagination>
-          <span> </span>
-          <span> </span>
-          <span> </span>
-        </Pagination>
-      </FlexWrapper>
-    </TestimonyStyled>
+    <TestimonyWrapper>
+      <TestimonyStyled>
+        <FlexWrapper direction="column" justify="space-between" align="center">
+          <SectionTitle>My priority</SectionTitle>
+          <Slider />
+          <Pagination>
+            <span> </span>
+            <span> </span>
+            <span> </span>
+          </Pagination>
+        </FlexWrapper>
+      </TestimonyStyled>
+    </TestimonyWrapper>
   );
 };
 
-const TestimonyStyled = styled.section`
- background-color: ${myTheme.colors.backgroundB};
- padding: 120px;
-`
+const TestimonyWrapper = styled.section`
+  width: 100%;
+  background-color: ${myTheme.colors.backgroundB};
+  display: flex;
+  justify-content: center;
+`;
 
-const Pagination = styled.div`
+const TestimonyStyled = styled.section`
+  width: 1300px;
+  padding: 120px 0;
+`;
+
+const Pagination = styled.nav`
   span {
     display: inline-block;
     width: 10px;
     height: 10px;
     margin: 40px 5px 5px 5px;
+    cursor: pointer;
     background: linear-gradient(
-    180deg,
-    ${myTheme.colors.brightA} 50%,
-    ${myTheme.colors.brightB}
-  );;
+      180deg,
+      ${myTheme.colors.brightA} 50%,
+      ${myTheme.colors.brightB}
+    );
   }
-`
+`;

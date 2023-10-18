@@ -12,17 +12,26 @@ const items = ["All", "Landing page", "React", "SPA"];
 
 export const Works = () => {
   return (
-    <WorksStyled>
-      <SectionTitle>My work experience</SectionTitle>
-      <FlexWrapper justify={"space-between"}>
-        <Work title={"Social network"} text={"Lorem"} src={socialNetwork} />
-        <Work title={"Task tracker"} text={"Lorem"} src={toDoList} />
-      </FlexWrapper>
-    </WorksStyled>
+    <WorksWrapper>
+      <WorksStyled>
+        <SectionTitle>My work experience</SectionTitle>
+        <FlexWrapper justify={"space-between"}>
+          <Work title={"Social network"} text={"Lorem"} src={socialNetwork} />
+          <Work title={"Task tracker"} text={"Lorem"} src={toDoList} />
+        </FlexWrapper>
+      </WorksStyled>
+    </WorksWrapper>
   );
 };
 
-const WorksStyled = styled.section`
+const WorksWrapper = styled.section`
+  width: 100%;
   background-color: ${myTheme.colors.backgroundA};
-  padding: 120px;
+  display: flex;
+  justify-content: center;
+`;
+
+const WorksStyled = styled.section`
+  width: 1300px;
+  padding: 120px 0;
 `;

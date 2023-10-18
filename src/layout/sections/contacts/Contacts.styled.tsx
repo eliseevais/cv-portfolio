@@ -7,6 +7,8 @@ import { FlexWrapper } from "../../../components/FlexWrapper.styled";
 
 export const Contacts = () => {
   return (
+    <ContactsWrapper>
+
     <ContactsStyled>
       <SectionTitle>Interested <br/>in my work</SectionTitle>
       <FlexWrapper justify="space-between">
@@ -19,12 +21,20 @@ export const Contacts = () => {
         </FormStyled>
       </FlexWrapper>
     </ContactsStyled>
+    </ContactsWrapper>
   );
 };
 
-const ContactsStyled = styled.section`
+const ContactsWrapper = styled.section`
+  width: 100%;
   background-color: ${myTheme.colors.backgroundA};
-  padding: 120px;
+  display: flex;
+  justify-content: center;
+`
+
+const ContactsStyled = styled.section`
+  width: 1300px;
+  padding: 120px 0;
   display: flex;
   justify-content: space-between;
 `;
