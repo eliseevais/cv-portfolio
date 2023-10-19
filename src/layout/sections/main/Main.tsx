@@ -73,8 +73,8 @@ const MainStyled = styled.section`
 `;
 
 const PhotoStyled = styled.img`
-  max-width: 560px;
-  max-height: 800px;
+  max-width: 660px;
+  max-height: 1000px;
   object-fit: fill;
 `;
 
