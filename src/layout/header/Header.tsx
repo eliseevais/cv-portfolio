@@ -1,34 +1,30 @@
 import React from "react";
 import styled from "styled-components";
-import { Menu } from "../../components/menu/Menu.styled";
-import { FlexWrapper } from "../../components/FlexWrapper.styled";
+import { ContainerWrapper } from "../../components/ContainerWrapper";
 import { myTheme } from "../../styles/Theme.styled";
+import { FlexWrapper } from "../../components/FlexWrapper";
+import { Menu } from "../../components/menu/Menu";
 
 const items = ["Home", "Portfolio", "Contact"];
 
 export const Header = (props: any) => {
   return (
-    <HeaderWrapper>
+    <ContainerWrapper
+      height="10vh"
+      bgColor={myTheme.colors.backgroundA}
+      justify="flex-end"
+    >
       <HeaderStyled>
-        <FlexWrapper align={"end"} justify={"space-between"} >
+        <FlexWrapper align="end" justify="space-between">
           <a href="#">
             <LogoStyled>Irina Eliseeva</LogoStyled>
           </a>
           <Menu menuItems={items} />
         </FlexWrapper>
       </HeaderStyled>
-    </HeaderWrapper>
+    </ContainerWrapper>
   );
 };
-
-const HeaderWrapper = styled.header`
-  width: 100%;
-  height: 10vh;
-  background-color: ${myTheme.colors.backgroundA};
-  display: flex;
-  justify-content: center;
-  align-items: end;
-`;
 
 const HeaderStyled = styled.header`
   width: 1300px;

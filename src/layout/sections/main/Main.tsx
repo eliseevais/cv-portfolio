@@ -1,13 +1,14 @@
 import React from "react";
-import mainPhotoSmall from "../../../assets/img/mainPhotoSmallVertical.jpg";
 import styled from "styled-components";
-import { FlexWrapper } from "../../../components/FlexWrapper.styled";
+import { ContainerWrapper } from "../../../components/ContainerWrapper";
 import { myTheme } from "../../../styles/Theme.styled";
-import { Header } from "../../header/Header.styled";
+import { FlexWrapper } from "../../../components/FlexWrapper";
+import { Button } from "../../../components/Button";
+import mainPhotoSmall from "../../../assets/img/mainPhotoSmallVertical.jpg";
 
 export const Main = () => {
   return (
-    <MainWrapper>
+    <ContainerWrapper height="90vh" bgColor={myTheme.colors.backgroundA}>
       <MainStyled>
         <FlexWrapper align={"center"} justify={"space-between"}>
           <div>
@@ -16,22 +17,15 @@ export const Main = () => {
               I'm Irina <br /> Eliseeva
             </h2>
             <MainTitle>Front-end web developer</MainTitle>
-            <button>Download CV</button>
+            <Button>Download CV</Button>
           </div>
           <PhotoStyled src={mainPhotoSmall} alt="myPhoto" />
         </FlexWrapper>
       </MainStyled>
-    </MainWrapper>
+    </ContainerWrapper>
   );
 };
 
-const MainWrapper = styled.section`
-  width: 100%;
-  height: 90vh;
-  background-color: ${myTheme.colors.backgroundA};
-  display: flex;
-  justify-content: center;
-`;
 const MainStyled = styled.section`
   width: 1300px;
   color: ${myTheme.colors.accentA};
@@ -51,30 +45,11 @@ const MainStyled = styled.section`
     font-size: 68px;
     line-height: 100px;
   }
-
-  button {
-    width: 280px;
-    height: 72px;
-    border-radius: 10px;
-    background: linear-gradient(
-      180deg,
-      ${myTheme.colors.brightA} 50%,
-      ${myTheme.colors.brightB}
-    );
-    color: ${myTheme.colors.accentA};
-    font-family: "Poppins";
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 38px;
-    letter-spacing: 3px;
-    margin-top: 34px;
-    cursor: pointer;
-  }
 `;
 
 const PhotoStyled = styled.img`
-  max-width: 660px;
-  max-height: 1000px;
+  max-width: calc(50%);
+  max-height: calc(80vh);
   object-fit: fill;
 `;
 

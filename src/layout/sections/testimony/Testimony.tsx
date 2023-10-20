@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import { SectionTitle } from "../../../components/SectionTitle.styled";
-import { Icon } from "../../../components/menu/icon/Icon";
+import { ContainerWrapper } from "../../../components/ContainerWrapper";
 import { myTheme } from "../../../styles/Theme.styled";
-import { FlexWrapper } from "../../../components/FlexWrapper.styled";
-import { Slider } from "../../../components/slider/Slider.styled";
+import { SectionTitle } from "../../../components/SectionTitle";
+import { FlexWrapper } from "../../../components/FlexWrapper";
+import { Slider } from "../../../components/slider/Slider";
 
 export const Testimony = () => {
   return (
-    <TestimonyWrapper>
+    <ContainerWrapper bgColor={myTheme.colors.backgroundB}>
       <TestimonyStyled>
         <FlexWrapper direction="column" justify="space-between" align="center">
           <SectionTitle>My priority</SectionTitle>
@@ -20,16 +20,9 @@ export const Testimony = () => {
           </Pagination>
         </FlexWrapper>
       </TestimonyStyled>
-    </TestimonyWrapper>
+    </ContainerWrapper>
   );
 };
-
-const TestimonyWrapper = styled.section`
-  width: 100%;
-  background-color: ${myTheme.colors.backgroundB};
-  display: flex;
-  justify-content: center;
-`;
 
 const TestimonyStyled = styled.section`
   width: 1300px;

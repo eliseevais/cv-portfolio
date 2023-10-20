@@ -2,11 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { myTheme } from "../../styles/Theme.styled";
 import { Icon } from "../../components/menu/icon/Icon";
-import { FlexWrapper } from "../../components/FlexWrapper.styled";
+import { FlexWrapper } from "../../components/FlexWrapper";
+import { ContainerWrapper } from "../../components/ContainerWrapper";
 
 export const Footer = () => {
   return (
-    <FooterWrapper>
+    <ContainerWrapper bgColor={myTheme.colors.backgroundB}>
       <FooterStyled>
         <FlexWrapper direction={"column"} align={"center"}>
           <SocialList>
@@ -47,16 +48,9 @@ export const Footer = () => {
           <Copyright>&copy; 2023, Irina Eliseeva</Copyright>
         </FlexWrapper>
       </FooterStyled>
-    </FooterWrapper>
+    </ContainerWrapper>
   );
 };
-
-const FooterWrapper = styled.footer`
-  width: 100%;
-  background-color: ${myTheme.colors.backgroundB};
-  display: flex;
-  justify-content: center;
-`;
 
 const FooterStyled = styled.footer`
   color: ${myTheme.colors.accentA};

@@ -7,7 +7,7 @@ export const Button = styled.button`
   border-radius: 10px;
   background: linear-gradient(
     180deg,
-    ${myTheme.colors.brightA} 50%,
+    ${myTheme.colors.brightA} 20%,
     ${myTheme.colors.brightB}
   );
   color: ${myTheme.colors.accentA};
