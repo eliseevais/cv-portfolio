@@ -30,7 +30,7 @@ const ImgStyled = styled.img`
 
 const TitleProject = styled.h3`
   color: ${myTheme.colors.accentA};
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 26px;
   font-weight: 600;
   line-height: 38px;

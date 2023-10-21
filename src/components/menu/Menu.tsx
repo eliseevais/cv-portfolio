@@ -26,7 +26,7 @@ const MenuStyled = styled.nav`
   ul {
     display: flex;
     gap: 30px;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;

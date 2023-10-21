@@ -27,7 +27,7 @@ const Slide = styled.div`
 
 const Text = styled.p`
   color: ${myTheme.colors.accentA};
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
@@ -36,7 +36,7 @@ const Text = styled.p`
 
 const Name = styled.span`
   color: ${myTheme.colors.accentA};
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 26px;
   font-weight: 600;
   line-height: 38px;

@@ -66,7 +66,7 @@ const SocialLink = styled.a``;
 const SocialItem = styled.li``;
 
 const Copyright = styled.small`
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 12px;
   letter-spacing: 10px;

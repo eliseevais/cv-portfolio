@@ -24,7 +24,7 @@ const SkillStyled = styled.section`
 const SkillTitle = styled.h2`
   display: flex;
   justify-content: center;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;

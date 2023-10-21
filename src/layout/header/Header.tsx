@@ -35,7 +35,7 @@ const HeaderStyled = styled.header`
 `;
 
 const LogoStyled = styled.div`
-  font-family: "Alex Brush", cursive;
+  font-family: "Alex Brush", "cursive";
   font-size: 32px;
   font-weight: 400;
   line-height: 40px;
