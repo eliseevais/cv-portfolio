@@ -13,13 +13,13 @@ export const Skills = () => {
         <SectionTitle>
           <SectionTitleStyled>My skills</SectionTitleStyled>
         </SectionTitle>
-        <FlexWrapper justify={"space-between"} align={"center"}>
-          <Skill iconId={"html"} title={"HTML"} />
-          <Skill iconId={"css"} title={"CSS"} />
-          <Skill iconId={"javaScript"} title={"JavaScript"} />
-          <Skill iconId={"typeScript"} title={"TypeScript"} />
-          <Skill iconId={"react"} title={"React"} />
-          <Skill iconId={"git"} title={"Git"} />
+        <FlexWrapper justify="space-between" align="center" wrap="wrap">
+          <Skill iconId="html" title="HTML" />
+          <Skill iconId="css" title="CSS" />
+          <Skill iconId="javaScript" title="JavaScript" />
+          <Skill iconId="typeScript" title="TypeScript" />
+          <Skill iconId="react" title="React" />
+          <Skill iconId="git" title="Git" />
         </FlexWrapper>
       </SkillsStyled>
     </ContainerWrapper>

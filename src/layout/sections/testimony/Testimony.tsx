@@ -40,7 +40,7 @@ const SectionTitleStyled = styled.div`
     position: absolute;
     height: 2px;
     width: 400px;
-    top: 50px;
+    top: 44px;
     right: 450px;
   }
 
@@ -50,7 +50,7 @@ const SectionTitleStyled = styled.div`
     position: absolute;
     height: 2px;
     width: 400px;
-    top: 50px;
+    top: 44px;
     left: 450px;
   }
 `;

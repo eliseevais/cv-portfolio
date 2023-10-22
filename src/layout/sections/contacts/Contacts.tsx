@@ -13,10 +13,10 @@ export const Contacts = () => {
         <SectionTitle>Interested <br />in my work </SectionTitle>
         <FlexWrapper justify="space-between">
           <FormStyled>
-            <FieldStyled placeholder="Your name" />
-            <FieldStyled placeholder="Your e-mail" />
-            <FieldStyled placeholder="Subject" />
-            <FieldStyled as={"textarea"} placeholder="Message" />
+            <FieldStyled name="your name" placeholder="Your name" />
+            <FieldStyled name="e-mail" placeholder="Your e-mail" />
+            <FieldStyled name="subject" placeholder="subject" />
+            <FieldStyled name="message" as={"textarea"} placeholder="message" />
             <Button type={"submit"}>Contact me</Button>
           </FormStyled>
         </FlexWrapper>
