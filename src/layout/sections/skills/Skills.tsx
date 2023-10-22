@@ -8,7 +8,7 @@ import { ContainerWrapper } from "../../../components/ContainerWrapper";
 
 export const Skills = () => {
   return (
-    <ContainerWrapper bgColor={myTheme.colors.backgroundB}>
+    <ContainerWrapper bgColor={myTheme.colors.backgroundA}>
       <SkillsStyled>
         <SectionTitle>My skills</SectionTitle>
         <FlexWrapper justify={"space-between"} align={"center"}>

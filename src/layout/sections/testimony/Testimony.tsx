@@ -8,10 +8,10 @@ import { Slider } from "../../../components/slider/Slider";
 
 export const Testimony = () => {
   return (
-    <ContainerWrapper bgColor={myTheme.colors.backgroundB}>
+    <ContainerWrapper bgColor={myTheme.colors.backgroundA}>
       <TestimonyStyled>
         <FlexWrapper direction="column" justify="space-between" align="center">
-          <SectionTitle>My priority</SectionTitle>
+          <SectionTitle>My priorities</SectionTitle>
           <Slider />
           <Pagination>
             <span> </span>

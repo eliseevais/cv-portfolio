@@ -8,7 +8,7 @@ import { Button } from "../../../components/Button";
 
 export const Contacts = () => {
   return (
-    <ContainerWrapper bgColor={myTheme.colors.backgroundA}>
+    <ContainerWrapper bgColor={myTheme.colors.backgroundB}>
       <ContactsStyled>
         <SectionTitle>Interested <br />in my work </SectionTitle>
         <FlexWrapper justify="space-between">

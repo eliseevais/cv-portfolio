@@ -11,10 +11,10 @@ export const Main = () => {
     <ContainerWrapper
       height="90vh"
       bgColor={myTheme.colors.backgroundA}
-      justify="flex-start"
+      justify="center"
     >
       <MainStyled>
-        <FlexWrapper align={"center"} justify={"space-between"}>
+        <FlexWrapper align="center" justify="space-between" >
           <div>
             <span>welcome</span>
             <h2>
@@ -23,8 +23,8 @@ export const Main = () => {
             <MainTitle>Front-end web developer</MainTitle>
             <Button>Download CV</Button>
           </div>
-          <PhotoStyled src={mainPhotoSmall} alt="myPhoto" />
         </FlexWrapper>
+          <PhotoStyled src={mainPhotoSmall} alt="myPhoto" />
       </MainStyled>
     </ContainerWrapper>
   );
@@ -33,6 +33,10 @@ export const Main = () => {
 const MainStyled = styled.section`
   width: 1300px;
   color: ${myTheme.colors.accentA};
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
 
   span {
     font-family: "Poppins", sans-serif;
@@ -52,8 +56,8 @@ const MainStyled = styled.section`
 `;
 
 const PhotoStyled = styled.img`
-  max-width: calc(50%);
-  max-height: calc(90vh);
+  max-width: 560px;
+  max-height: 800px;
   object-fit: fill;
 `;
 

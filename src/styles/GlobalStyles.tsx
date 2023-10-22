@@ -1,7 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-
-
 export const GlobalStyles = createGlobalStyle`
   *,
   *::before,
@@ -14,6 +12,6 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    
+    text-transform: capitalize;
   }
 `

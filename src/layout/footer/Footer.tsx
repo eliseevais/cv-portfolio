@@ -7,7 +7,7 @@ import { ContainerWrapper } from "../../components/ContainerWrapper";
 
 export const Footer = () => {
   return (
-    <ContainerWrapper bgColor={myTheme.colors.backgroundB}>
+    <ContainerWrapper bgColor={myTheme.colors.backgroundA}>
       <FooterStyled>
         <FlexWrapper direction={"column"} align={"center"}>
           <SocialList>
