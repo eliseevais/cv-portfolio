@@ -11,7 +11,9 @@ export const Testimony = () => {
     <ContainerWrapper bgColor={myTheme.colors.backgroundA}>
       <TestimonyStyled>
         <FlexWrapper direction="column" justify="space-between" align="center">
-          <SectionTitle>My priorities</SectionTitle>
+          <SectionTitle>
+            <SectionTitleStyled>My priorities</SectionTitleStyled>
+          </SectionTitle>
           <Slider />
           <Pagination>
             <span> </span>
@@ -26,8 +28,33 @@ export const Testimony = () => {
 
 const TestimonyStyled = styled.section`
   width: 1300px;
-  padding: 120px 0;
+  padding-top: 120px;
 `;
+
+const SectionTitleStyled = styled.div`
+  position: relative;
+
+  ::before {
+    content: "";
+    border-bottom: 1px solid ${myTheme.colors.accentA};
+    position: absolute;
+    height: 2px;
+    width: 400px;
+    top: 50px;
+    right: 450px;
+  }
+
+  ::after {
+    content: "";
+    border-bottom: 1px solid ${myTheme.colors.accentA};
+    position: absolute;
+    height: 2px;
+    width: 400px;
+    top: 50px;
+    left: 450px;
+  }
+`;
+
 
 const Pagination = styled.nav`
   span {

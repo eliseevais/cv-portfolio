@@ -1,8 +1,7 @@
 import React from "react";
 import "./App.css";
 import { ContainerWrapper } from "./components/ContainerWrapper";
-import { Header } from "./layout/header/Header";
-import { Main } from "./layout/sections/main/Main";
+import { HeaderAndMain } from "./layout/sections/main/HeaderAndMain";
 import { Skills } from "./layout/sections/skills/Skills";
 import { Works } from "./layout/sections/works/Works";
 import { Testimony } from "./layout/sections/testimony/Testimony";
@@ -13,8 +12,7 @@ import { About } from "./layout/sections/about/About";
 function App() {
   return (
     <ContainerWrapper>
-      <Header />
-      <Main />
+      <HeaderAndMain />
       <About />
       <Skills />
       <Works />

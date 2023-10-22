@@ -1,18 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { myTheme } from "../../../../styles/Theme.styled";
-import socialNetwork from "../../../../assets/img/socialNetwork.jpg";
 
 type WorkPropsType = {
   title: string;
   text: string;
   src?: string;
-  img?: string;
 };
 
 export const Work = (props: WorkPropsType) => {
   return (
-    <WorkStyled background-image={props.img}>
+    <WorkStyled>
       <ImgStyled src={props.src} alt="photo" />
       <TitleProject>{props.title}</TitleProject>
       <Link href={"#"}>Visit</Link>
@@ -21,13 +19,10 @@ export const Work = (props: WorkPropsType) => {
 };
 
 const WorkStyled = styled.div`
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   width: 580px;
   height: 450px;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  background-image: url(${socialNetwork});
+  position: relative;
 
   :hover{ 
     transition: 0.5s;
@@ -40,7 +35,7 @@ const ImgStyled = styled.img`
   height: 450px;
   object-fit: cover;
 
-  transition: 0.5s;
+  transition: 0.2s;
 
   :hover {
     filter: brightness(40%);
@@ -54,6 +49,9 @@ const TitleProject = styled.h3`
   font-weight: 600;
   line-height: 38px;
   letter-spacing: 3px;
+  position: absolute;
+  bottom: 66px;
+  left: 65px;
 `;
 
 const Link = styled.a`
@@ -64,4 +62,7 @@ const Link = styled.a`
   font-weight: 600;
   line-height: 18px;
   letter-spacing: 3px;
+  position: absolute;
+  bottom: 46px;
+  left: 65px;
 `;

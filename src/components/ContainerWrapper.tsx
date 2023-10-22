@@ -20,5 +20,5 @@ export const ContainerWrapper = styled.div<ContainerPropsType>`
   flex-wrap: ${props => props.wrap || "no-wrap"};
   width: ${props => props.width || "100%" };
   height: ${props => props.height || "auto"};
-  background-color: ${props => props.bgColor || "green"};
+  background-color: ${props => props.bgColor || myTheme.colors.backgroundA };
 `;

@@ -10,7 +10,9 @@ export const Skills = () => {
   return (
     <ContainerWrapper bgColor={myTheme.colors.backgroundA}>
       <SkillsStyled>
-        <SectionTitle>My skills</SectionTitle>
+        <SectionTitle>
+          <SectionTitleStyled>My skills</SectionTitleStyled>
+        </SectionTitle>
         <FlexWrapper justify={"space-between"} align={"center"}>
           <Skill iconId={"html"} title={"HTML"} />
           <Skill iconId={"css"} title={"CSS"} />
@@ -28,5 +30,20 @@ const SkillsStyled = styled.section`
   width: 1300px;
   display: flex;
   flex-direction: column;
-  padding: 120px 0;
+  padding-top: 120px;
+`;
+
+const SectionTitleStyled = styled.div`
+  position: relative;
+
+  ::before {
+    content: "";
+    width: 20px;
+    height: 1px;
+    border-bottom: 1px solid ${myTheme.colors.accentA};
+    position: absolute;
+    height: 2px;
+    width: 174px;
+    top: -10px;
+  }
 `;

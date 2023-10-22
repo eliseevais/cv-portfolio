@@ -14,14 +14,24 @@ const items = ["All", "Landing page", "React", "SPA"];
 
 export const Works = () => {
   return (
-    <ContainerWrapper bgColor={myTheme.colors.backgroundB}>
+    <ContainerWrapper bgColor={myTheme.colors.backgroundA}>
       <WorksStyled>
-        <SectionTitle>My work experience</SectionTitle>
+        <SectionTitle>
+          <SectionTitleStyled>My work experience</SectionTitleStyled>
+        </SectionTitle>
         <FlexWrapper justify="space-between" wrap="wrap">
-          <Work title="Social network" text="Lorem" img={socialNetwork}/>
+          <Work title="Social network" text="Lorem" src={socialNetwork} />
           <Work title="Task tracker" text="Lorem" src={toDoList} />
-          <Work title="New project is loading" text="Lorem" src={workExample4} />
-          <Work title="Here could be your idea" text="Lorem" src={workExample3} />
+          <Work
+            title="New project is loading"
+            text="Lorem"
+            src={workExample4}
+          />
+          <Work
+            title="Here could be your idea"
+            text="Lorem"
+            src={workExample3}
+          />
         </FlexWrapper>
       </WorksStyled>
     </ContainerWrapper>
@@ -30,5 +40,20 @@ export const Works = () => {
 
 const WorksStyled = styled.section`
   width: 1300px;
-  padding: 120px 0;
+  padding-top: 120px;
+`;
+
+const SectionTitleStyled = styled.div`
+  position: relative;
+
+  ::before {
+    content: "";
+    width: 20px;
+    height: 1px;
+    border-bottom: 1px solid ${myTheme.colors.accentA};
+    position: absolute;
+    height: 2px;
+    width: 450px;
+    top: -10px;
+  }
 `;

@@ -5,16 +5,18 @@ import { myTheme } from "../../../styles/Theme.styled";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Button } from "../../../components/Button";
 import mainPhotoSmall from "../../../assets/img/mainPhotoSmallVertical.jpg";
+import { Header } from "../../header/Header";
 
-export const Main = () => {
+export const HeaderAndMain = () => {
   return (
     <ContainerWrapper
-      height="90vh"
+      height="100vh"
       bgColor={myTheme.colors.backgroundA}
       justify="center"
     >
+      <Header />
       <MainStyled>
-        <FlexWrapper align="center" justify="space-between" >
+        <FlexWrapper align="center" justify="space-between">
           <div>
             <span>welcome</span>
             <h2>
@@ -24,7 +26,7 @@ export const Main = () => {
             <Button>Download CV</Button>
           </div>
         </FlexWrapper>
-          <PhotoStyled src={mainPhotoSmall} alt="myPhoto" />
+        <PhotoStyled src={mainPhotoSmall} alt="myPhoto" />
       </MainStyled>
     </ContainerWrapper>
   );
@@ -36,7 +38,6 @@ const MainStyled = styled.section`
   min-height: 90vh;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 
   span {
     font-family: "Poppins", sans-serif;
@@ -56,9 +57,9 @@ const MainStyled = styled.section`
 `;
 
 const PhotoStyled = styled.img`
-  max-width: 560px;
-  max-height: 800px;
-  object-fit: fill;
+  max-width: 60%;
+  max-height: 90%;
+  object-fit: cover;
 `;
 
 const MainTitle = styled.h1`
