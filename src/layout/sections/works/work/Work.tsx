@@ -20,7 +20,7 @@ export const Work = (props: WorkPropsType) => {
 
 const WorkStyled = styled.div`
   margin-bottom: 40px;
-  width: 580px;
+  width: 600px;
   height: 450px;
   position: relative;
 
@@ -31,7 +31,7 @@ const WorkStyled = styled.div`
 `;
 
 const ImgStyled = styled.img`
-  width: 580px;
+  width: 600px;
   height: 450px;
   object-fit: cover;
 

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ContainerWrapper } from "../../../components/ContainerWrapper";
+import { Container } from "../../../components/Container";
 import { myTheme } from "../../../styles/Theme.styled";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { SectionTitle } from "../../../components/SectionTitle";
@@ -8,7 +8,7 @@ import { Button } from "../../../components/Button";
 
 export const Contacts = () => {
   return (
-    <ContainerWrapper bgColor={myTheme.colors.backgroundA}>
+    <Container>
       <ContactsStyled>
         <SectionTitle>Interested <br />in my work </SectionTitle>
         <FlexWrapper justify="space-between">
@@ -21,12 +21,11 @@ export const Contacts = () => {
           </FormStyled>
         </FlexWrapper>
       </ContactsStyled>
-    </ContainerWrapper>
+    </Container>
   );
 };
 
 const ContactsStyled = styled.section`
-  width: 1300px;
   padding: 120px 0;
   display: flex;
   justify-content: space-between;

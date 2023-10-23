@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ContainerWrapper } from "../../../components/ContainerWrapper";
+import { Container } from "../../../components/Container";
 import { myTheme } from "../../../styles/Theme.styled";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { FlexWrapper } from "../../../components/FlexWrapper";
@@ -14,7 +14,7 @@ const items = ["All", "Landing page", "React", "SPA"];
 
 export const Works = () => {
   return (
-    <ContainerWrapper bgColor={myTheme.colors.backgroundA}>
+    <Container>
       <WorksStyled>
         <SectionTitle>
           <SectionTitleStyled>My work experience</SectionTitleStyled>
@@ -34,12 +34,11 @@ export const Works = () => {
           />
         </FlexWrapper>
       </WorksStyled>
-    </ContainerWrapper>
+    </Container>
   );
 };
 
 const WorksStyled = styled.section`
-  width: 1300px;
   padding-top: 120px;
 `;
 

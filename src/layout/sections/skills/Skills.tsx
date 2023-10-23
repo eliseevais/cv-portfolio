@@ -4,11 +4,11 @@ import { myTheme } from "../../../styles/Theme.styled";
 import { Skill } from "./skill/Skill";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { SectionTitle } from "../../../components/SectionTitle";
-import { ContainerWrapper } from "../../../components/ContainerWrapper";
+import { Container } from "../../../components/Container";
 
 export const Skills = () => {
   return (
-    <ContainerWrapper bgColor={myTheme.colors.backgroundA}>
+    <Container>
       <SkillsStyled>
         <SectionTitle>
           <SectionTitleStyled>My skills</SectionTitleStyled>
@@ -22,12 +22,11 @@ export const Skills = () => {
           <Skill iconId="git" title="Git" />
         </FlexWrapper>
       </SkillsStyled>
-    </ContainerWrapper>
+    </Container>
   );
 };
 
 const SkillsStyled = styled.section`
-  width: 1300px;
   display: flex;
   flex-direction: column;
   padding-top: 120px;

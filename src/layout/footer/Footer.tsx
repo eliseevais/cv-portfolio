@@ -3,12 +3,12 @@ import styled from "styled-components";
 import { myTheme } from "../../styles/Theme.styled";
 import { Icon, IconFooter } from "../../components/menu/icon/Icon";
 import { FlexWrapper } from "../../components/FlexWrapper";
-import { ContainerWrapper } from "../../components/ContainerWrapper";
+import { Container } from "../../components/Container";
 import { SectionTitle } from "../../components/SectionTitle";
 
 export const Footer = () => {
   return (
-    <ContainerWrapper bgColor={myTheme.colors.backgroundA}>
+    <Container>
       <FooterStyled>
         <FlexWrapper justify="space-between">
           <ContactsFooter>
@@ -53,13 +53,11 @@ export const Footer = () => {
         </FlexWrapper>
         <Copyright>&copy; 2023, Made by Irina Eliseeva</Copyright>
       </FooterStyled>
-    </ContainerWrapper>
+    </Container>
   );
 };
 
 const FooterStyled = styled.footer`
-  width: 1300px;
-  color: ${myTheme.colors.accentA};
   padding-bottom: 20px;
   display: flex;
   align-items: center;

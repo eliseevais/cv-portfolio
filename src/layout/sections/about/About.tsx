@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { myTheme } from "../../../styles/Theme.styled";
-import { ContainerWrapper } from "../../../components/ContainerWrapper";
+import { Container } from "../../../components/Container";
 import aboutPhotoVertical from "./../../../assets/img/AboutPhotoVertical.jpg";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { SectionTitle } from "../../../components/SectionTitle";
 
 export const About = () => {
   return (
-    <ContainerWrapper bgColor={myTheme.colors.backgroundB}>
+    <Container>
       <AboutStyled>
         <img src={aboutPhotoVertical} alt="img" />
         <FlexWrapper direction="column" justify="center">
@@ -25,16 +25,16 @@ export const About = () => {
           </p>
         </FlexWrapper>
       </AboutStyled>
-    </ContainerWrapper>
+    </Container>
   );
 };
 
 const AboutStyled = styled.section`
-  width: 1300px;
   display: flex;
   flex-direction: row;
-  padding: 120px 0;
+  margin-top: 120px;
   justify-content: space-around;
+  background-color: ${myTheme.colors.backgroundB};
 
   img {
     max-width: 470px;
@@ -44,7 +44,6 @@ const AboutStyled = styled.section`
 
   p {
     max-width: 520px;
-    color: ${myTheme.colors.accentA};
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 14px;

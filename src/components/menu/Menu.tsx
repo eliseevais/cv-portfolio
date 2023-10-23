@@ -23,13 +23,14 @@ export const Menu = (props: MenuPropsType) => {
 };
 
 const MenuStyled = styled.nav`
+
   ul {
     display: flex;
     gap: 30px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 40px;
 
     a {
       color: ${myTheme.colors.accentB};

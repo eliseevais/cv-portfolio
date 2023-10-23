@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ContainerWrapper } from "../../../components/ContainerWrapper";
+import { Container} from "../../../components/Container";
 import { myTheme } from "../../../styles/Theme.styled";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { FlexWrapper } from "../../../components/FlexWrapper";
@@ -8,7 +8,7 @@ import { Slider } from "../../../components/slider/Slider";
 
 export const Testimony = () => {
   return (
-    <ContainerWrapper bgColor={myTheme.colors.backgroundA}>
+    <Container>
       <TestimonyStyled>
         <FlexWrapper direction="column" justify="space-between" align="center">
           <SectionTitle>
@@ -22,12 +22,11 @@ export const Testimony = () => {
           </Pagination>
         </FlexWrapper>
       </TestimonyStyled>
-    </ContainerWrapper>
+    </Container>
   );
 };
 
 const TestimonyStyled = styled.section`
-  width: 1300px;
   padding-top: 120px;
 `;
 
