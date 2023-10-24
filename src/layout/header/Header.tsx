@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Container } from "../../components/Container";
-import { myTheme } from "../../styles/Theme.styled";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Menu } from "../../components/menu/Menu";
 
@@ -9,23 +8,27 @@ const items = ["Home", "Portfolio", "Contact"];
 
 export const Header = (props: any) => {
   return (
-    <Container>
-      <HeaderStyled>
+    <HeaderStyled>
+      <Container>
         <FlexWrapper justify="space-between" align="end">
-          <a href="#">
-            <LogoStyled>Irina Eliseeva</LogoStyled>
-          </a>
+          <LogoStyled>Irina Eliseeva</LogoStyled>
           <Menu menuItems={items} />
         </FlexWrapper>
-      </HeaderStyled>
-    </Container>
+      </Container>
+    </HeaderStyled>
   );
 };
 
 const HeaderStyled = styled.header`
-  background-color: ${myTheme.colors.backgroundA};
-  padding-top: 6vh;
-  min-height: 10vh;
+  border: 1px solid orange;
+  min-height: 120px;
+  display: flex;
+  align-items: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  right: 0;
+  z-index: 99999;
 `;
 
 const LogoStyled = styled.div`

@@ -12,9 +12,9 @@ export const Menu = (props: MenuPropsType) => {
       <ul>
         {props.menuItems.map((item, index) => {
           return (
-            <li key={index}>
-              <a href="#">{item}</a>
-            </li>
+            <ListItem key={index}>
+              <Link href="#">{item}</Link>
+            </ListItem>
           );
         })}
       </ul>
@@ -23,21 +23,24 @@ export const Menu = (props: MenuPropsType) => {
 };
 
 const MenuStyled = styled.nav`
-
   ul {
     display: flex;
+    justify-content: center;
     gap: 30px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 40px;
+  }
+`;
 
-    a {
-      color: ${myTheme.colors.accentB};
-    }
+const ListItem = styled.li`
 
-    a:active {
-      color: ${myTheme.colors.accentA};
-    }
+`;
+
+const Link = styled.a`
+  color: ${myTheme.colors.accentB};
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+
+  :active {
+    color: ${myTheme.colors.accentA};
   }
 `;

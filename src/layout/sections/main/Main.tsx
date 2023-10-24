@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { myTheme } from "../../../styles/Theme.styled";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Button } from "../../../components/Button";
-import mainPhotoSmall from "../../../assets/img/mainPhotoSmallVertical.jpg";
+import mainPhotoSmall from "../../../assets/img/mainPhotoSmall.jpg";
 import { Container } from "../../../components/Container";
 
 export const Main = () => {
@@ -27,7 +27,7 @@ export const Main = () => {
 };
 
 const MainStyled = styled.section`
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between;
 
@@ -49,8 +49,8 @@ const MainStyled = styled.section`
 `;
 
 const PhotoStyled = styled.img`
-  max-width: calc(50%);
-  max-height: calc(80%);
+  max-width: calc(60%);
+  max-height: 90vh;
   object-fit: cover;
 `;
 
