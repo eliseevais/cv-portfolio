@@ -20,7 +20,7 @@ export const Header = (props: any) => {
 };
 
 const HeaderStyled = styled.header`
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   min-height: 120px;
   display: flex;
   align-items: flex-end;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { myTheme } from "../../../styles/Theme.styled";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Button } from "../../../components/Button";
-import mainPhotoSmall from "../../../assets/img/mainPhotoSmall.jpg";
+import mainPhotoSmall from "../../../assets/img/mainPhotoSmallVertical.jpg";
 import { Container } from "../../../components/Container";
 
 export const Main = () => {
@@ -30,6 +30,7 @@ const MainStyled = styled.section`
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   span {
     font-family: "Poppins", sans-serif;
@@ -52,6 +53,7 @@ const PhotoStyled = styled.img`
   max-width: calc(60%);
   max-height: 90vh;
   object-fit: cover;
+  align-self: flex-start;
 `;
 
 const MainTitle = styled.h1`
