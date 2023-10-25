@@ -44,15 +44,14 @@ const WorksStyled = styled.section`
 
 const SectionTitleStyled = styled.div`
   position: relative;
+  width: fit-content;
 
   ::before {
     content: "";
-    width: 20px;
-    height: 1px;
     border-bottom: 1px solid ${myTheme.colors.accentA};
     position: absolute;
     height: 2px;
-    width: 450px;
+    width: 70%;
     top: -10px;
   }
 `;

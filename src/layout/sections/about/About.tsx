@@ -10,7 +10,7 @@ export const About = () => {
   return (
     <AboutStyled>
       <Container>
-        <FlexWrapper justify="space-between">
+        <FlexWrapper justify="space-between" align="center">
           <img src={aboutPhotoVertical} alt="img" />
           <FlexWrapper direction="column" justify="center">
             <SectionTitle>About</SectionTitle>
@@ -33,7 +33,7 @@ export const About = () => {
 
 const AboutStyled = styled.section`
   background-color: ${myTheme.colors.backgroundB};
-  padding: 60px 0;
+  padding: 120px 0;
 
   img {
     max-width: 470px;
@@ -42,11 +42,6 @@ const AboutStyled = styled.section`
   }
 
   p {
-    max-width: 520px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 1.5px;
+    max-width: 660px;
   }
 `;

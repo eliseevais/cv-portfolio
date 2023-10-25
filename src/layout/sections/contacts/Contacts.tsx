@@ -43,6 +43,4 @@ const FieldStyled = styled.input`
   min-height: 40px;
   padding: 6px;
   border-radius: 10px;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 1.5px;
 `;

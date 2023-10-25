@@ -18,49 +18,34 @@ export const Work = (props: WorkPropsType) => {
   );
 };
 
+const ImgStyled = styled.img`
+  width: 620px;
+  height: 450px;
+  object-fit: cover;
+`;
+
 const WorkStyled = styled.div`
   margin-bottom: 40px;
-  width: 600px;
+  width: 620px;
   height: 450px;
   position: relative;
 
-  :hover{ 
-    transition: 0.5s;
-    backdrop-filter: brightness(40%);
-  }
-`;
-
-const ImgStyled = styled.img`
-  width: 600px;
-  height: 450px;
-  object-fit: cover;
-
-  transition: 0.2s;
-
-  :hover {
-    filter: brightness(40%);
+  &:hover {
+    ${ImgStyled} {
+      filter: brightness(40%);
+      transition: 0.5s;
+    }
   }
 `;
 
 const TitleProject = styled.h3`
-  color: ${myTheme.colors.accentA};
-  font-family: "Poppins", sans-serif;
-  font-size: 26px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: 3px;
   position: absolute;
   bottom: 66px;
   left: 65px;
 `;
 
 const Link = styled.a`
-  color: ${myTheme.colors.accentA};
   cursor: pointer;
-  font-family: "Poppins";
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 18px;
   letter-spacing: 3px;
   position: absolute;
   bottom: 46px;

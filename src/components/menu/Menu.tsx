@@ -41,7 +41,11 @@ const Link = styled.a`
   font-weight: 400;
   font-size: 20px;
 
-  :active {
+  &:active {
+    color: ${myTheme.colors.accentA};
+  }
+
+  &:hover {
     color: ${myTheme.colors.accentA};
   }
 `;

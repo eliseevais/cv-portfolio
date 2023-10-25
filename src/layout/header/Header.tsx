@@ -20,8 +20,7 @@ export const Header = (props: any) => {
 };
 
 const HeaderStyled = styled.header`
-  /* border: 1px solid orange; */
-  min-height: 120px;
+  min-height: 70px;
   display: flex;
   align-items: flex-end;
   position: fixed;
@@ -29,12 +28,14 @@ const HeaderStyled = styled.header`
   left: 0%;
   right: 0;
   z-index: 99999;
+
+  backdrop-filter: brightness(40%);
 `;
 
 const LogoStyled = styled.div`
   font-family: "Alex Brush", "cursive";
   font-size: 32px;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 32px;
   letter-spacing: 0em;
 `;

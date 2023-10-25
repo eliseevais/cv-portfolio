@@ -16,8 +16,8 @@ export const Skills = () => {
         <FlexWrapper justify="space-between" align="center" wrap="wrap">
           <Skill iconId="html" title="HTML" />
           <Skill iconId="css" title="CSS" />
-          <Skill iconId="javaScript" title="JavaScript" />
-          <Skill iconId="typeScript" title="TypeScript" />
+          <Skill iconId="javaScript" title="JS" />
+          <Skill iconId="typeScript" title="TS" />
           <Skill iconId="react" title="React" />
           <Skill iconId="git" title="Git" />
         </FlexWrapper>
@@ -34,15 +34,14 @@ const SkillsStyled = styled.section`
 
 const SectionTitleStyled = styled.div`
   position: relative;
+  width: fit-content;
 
   ::before {
     content: "";
-    width: 20px;
-    height: 1px;
     border-bottom: 1px solid ${myTheme.colors.accentA};
     position: absolute;
     height: 2px;
-    width: 174px;
+    width: 70%;
     top: -10px;
   }
 `;

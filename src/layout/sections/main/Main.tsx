@@ -31,22 +31,6 @@ const MainStyled = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  span {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 26px;
-    line-height: 40px;
-    letter-spacing: 10px;
-    text-transform: uppercase;
-  }
-
-  h2 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 68px;
-    line-height: 100px;
-  }
 `;
 
 const PhotoStyled = styled.img`
@@ -56,11 +40,4 @@ const PhotoStyled = styled.img`
   align-self: flex-start;
 `;
 
-const MainTitle = styled.h1`
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-`;
+const MainTitle = styled.h1``;

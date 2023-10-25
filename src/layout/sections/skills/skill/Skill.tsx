@@ -17,17 +17,12 @@ export const Skill = (props: SkillPropsType) => {
   );
 };
 
-const SkillStyled = styled.section`
+const SkillStyled = styled.div`
   color: ${myTheme.colors.accentA};
 `;
 
-const SkillTitle = styled.h2`
+const SkillTitle = styled.h3`
   display: flex;
   justify-content: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 3px;
   margin-top: 40px;
 `;

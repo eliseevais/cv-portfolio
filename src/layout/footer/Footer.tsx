@@ -12,11 +12,11 @@ export const Footer = () => {
       <FooterStyled>
         <FlexWrapper justify="space-between">
           <ContactsFooter>
-            <p>irina.eliseeva1991@gmail.com</p>
-            <p>Web designer and front-end developer</p>
+            <h6>irina.eliseeva1991@gmail.com</h6>
+            <h6>Web designer and front-end developer</h6>
           </ContactsFooter>
           <MediaBlock>
-            <div>Media</div>
+            <h6>Media</h6>
             <SocialList>
               <SocialItem>
                 <SocialLink>
@@ -70,39 +70,24 @@ const ContactsFooter = styled.div`
   flex-direction: column;
   align-items: flex-start;
   line-height: 20px;
-
-  font-family: "Fira Code", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  text-transform: none;
 `;
 
 const MediaBlock = styled.div`
   min-width: 100px;
 
-  font-family: "Fira Code", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  text-transform: none;
-
-  div {
+  h6 {
     margin-bottom: 0.5em;
   }
 `;
 
-const SocialList = styled.ul`
+const SocialList = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 
-const SocialItem = styled.li``;
+const SocialItem = styled.div``;
 
 const SocialLink = styled.a``;
 
-const Copyright = styled.small`
-  font-family: "Fira Code", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  text-transform: none;
-`;
+const Copyright = styled.small``;
