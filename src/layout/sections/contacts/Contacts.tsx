@@ -10,14 +10,14 @@ export const Contacts = () => {
   return (
     <Container>
       <ContactsStyled>
-        <SectionTitle>Interested <br />in my work </SectionTitle>
-        <FlexWrapper justify="space-between">
+        <FlexWrapper direction="column" justify="center" align="center" >
+          <SectionTitle>Interested in my work </SectionTitle>
           <FormStyled>
-            <FieldStyled name="your name" placeholder="Your name" />
-            <FieldStyled name="e-mail" placeholder="Your e-mail" />
+            <FieldStyled name="your name" placeholder="name" />
+            <FieldStyled name="e-mail" placeholder="e-mail" />
             <FieldStyled name="subject" placeholder="subject" />
             <FieldStyled name="message" as={"textarea"} placeholder="message" />
-            <Button type={"submit"}>Contact me</Button>
+            <Button type={"submit"}>Send</Button>
           </FormStyled>
         </FlexWrapper>
       </ContactsStyled>
@@ -26,21 +26,40 @@ export const Contacts = () => {
 };
 
 const ContactsStyled = styled.section`
-  padding: 120px 0;
-  display: flex;
-  justify-content: space-between;
+  padding: 100px 0 120px 0;
+
+  ${SectionTitle} {
+    margin-bottom: 40px;
+  }
+
+  textarea {
+    resize: none;
+    height: 160px;
+  }
 `;
 
 const FormStyled = styled.form`
-  min-width: 600px;
+  max-width: 600px;
   width: 100%;
+  gap: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: center;
 `;
 
 const FieldStyled = styled.input`
-  min-height: 40px;
-  padding: 6px;
-  border-radius: 10px;
+  width: 100%;
+  padding: 7px 15px;
+  border-radius: 4px;
+  background-color: ${myTheme.colors.backgroundA};
+  border: 2px solid ${myTheme.colors.backgroundB};
+  color: ${myTheme.colors.accentA};
+
+  &::placeholder {
+    text-transform: capitalize;
+  }
+
+  &:focus-visible {
+    outline: 5px solid ${myTheme.colors.backgroundB};
+  }
 `;

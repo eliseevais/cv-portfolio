@@ -60,12 +60,11 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 500;
     font-size: 12px;
     text-transform: none;
-    
   }
 
   input, textarea {
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 1.5px;

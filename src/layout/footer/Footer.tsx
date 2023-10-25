@@ -86,8 +86,20 @@ const SocialList = styled.div`
   justify-content: center;
 `;
 
-const SocialItem = styled.div``;
+const SocialItem = styled.div`
+&:hover {
+    transform: translateY(-4px);
+  }
+`;
 
-const SocialLink = styled.a``;
+const SocialLink = styled.a`
+  color: ${myTheme.colors.accentA}; 
+  cursor: pointer;
+
+  &:hover {
+    color: ${myTheme.colors.accentB}; 
+    transform: translateY(-2px);
+  }
+`;
 
 const Copyright = styled.small``;

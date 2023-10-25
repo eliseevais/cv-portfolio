@@ -37,7 +37,7 @@ export const IconFooter = (props: IconPropsType) => {
       width={props.width || "140px"}
       height={props.height || "140px"}
       viewBox={props.viewBox || "0 0 16 16"}
-      fill={myTheme.colors.accentA}
+      fill="currentColor"
       x="0"
       y="0"
       xmlns="http://www.w3.org/2000/svg"
