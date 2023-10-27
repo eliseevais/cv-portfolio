@@ -11,6 +11,7 @@ export const Button = styled.button`
     ${myTheme.colors.brightB}
   );
   color: ${myTheme.colors.accentA};
+
   font-family: "Poppins";
   font-weight: 400;
   font-size: 26px;
@@ -18,4 +19,22 @@ export const Button = styled.button`
   letter-spacing: 5%;
   margin-top: 34px;
   cursor: pointer;
+  position: relative;
+  transition: 0.2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    background: ${myTheme.colors.backgroundA};
+    border-radius: 10px;
+    z-index: -1;
+  }
+
+  &:hover {
+    transform: scale(1);
+  }
 `;
