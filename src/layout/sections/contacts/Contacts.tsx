@@ -27,6 +27,7 @@ export const Contacts = () => {
 
 const ContactsStyled = styled.section`
   padding: 100px 0 120px 0;
+  margin: 0 14px;
 
   ${SectionTitle} {
     margin-bottom: 40px;

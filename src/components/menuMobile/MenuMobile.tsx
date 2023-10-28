@@ -6,9 +6,12 @@ type MenuPropsType = {
   menuItems: Array<string>;
 };
 
-export const Menu = (props: MenuPropsType) => {
+export const MenuMobile = (props: MenuPropsType) => {
   return (
-    <MenuStyled>
+    <MenuMobileStyled>
+      <BurgerButton>
+        <span></span>
+      </BurgerButton>
       <ul>
         {props.menuItems.map((item, index) => {
           return (
@@ -18,11 +21,11 @@ export const Menu = (props: MenuPropsType) => {
           );
         })}
       </ul>
-    </MenuStyled>
+    </MenuMobileStyled>
   );
 };
 
-const MenuStyled = styled.nav`
+const MenuMobileStyled = styled.nav`
   ul {
     display: flex;
     justify-content: center;
@@ -35,9 +38,22 @@ const MenuStyled = styled.nav`
   }
 `;
 
-const ListItem = styled.li`
+const BurgerButton = styled.button`
+  width: 16px;
+  height: 6px;
 
+  position: fixed;
+  top: -40px;
+  right: -30px;
+
+  span {
+    display: block;
+    width: 16px;
+    height: 2px;
+  }
 `;
+
+const ListItem = styled.li``;
 
 const Link = styled.a`
   color: ${myTheme.colors.accentB};

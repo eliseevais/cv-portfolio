@@ -20,7 +20,7 @@ export const Button = styled.button`
   margin-top: 34px;
   cursor: pointer;
   position: relative;
-  transition: 0.2;
+  transition: 0.2s;
 
   &::before {
     content: "";
@@ -32,6 +32,7 @@ export const Button = styled.button`
     background: ${myTheme.colors.backgroundA};
     border-radius: 10px;
     z-index: -1;
+    transition: ease 0.2s;
   }
 
   &:hover {

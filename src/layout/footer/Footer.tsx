@@ -62,6 +62,7 @@ const FooterStyled = styled.footer`
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0 14px;
 `;
 
 const ContactsFooter = styled.div`

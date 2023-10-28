@@ -31,6 +31,7 @@ const MainStyled = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 14px;
 `;
 
 const PhotoStyled = styled.img`

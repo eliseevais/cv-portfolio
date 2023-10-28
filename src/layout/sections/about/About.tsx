@@ -34,6 +34,7 @@ export const About = () => {
 const AboutStyled = styled.section`
   background-color: ${myTheme.colors.backgroundB};
   padding: 120px 0;
+  margin: 0 14px;
 
   img {
     max-width: 470px;

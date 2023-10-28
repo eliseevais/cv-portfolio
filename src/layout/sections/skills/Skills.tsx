@@ -30,6 +30,7 @@ const SkillsStyled = styled.section`
   display: flex;
   flex-direction: column;
   padding-top: 120px;
+  margin: 0 14px;
 `;
 
 const SectionTitleStyled = styled.div`

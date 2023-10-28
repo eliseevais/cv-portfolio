@@ -40,6 +40,7 @@ export const Works = () => {
 
 const WorksStyled = styled.section`
   padding-top: 120px;
+  margin: 0 14px;
 `;
 
 const SectionTitleStyled = styled.div`
