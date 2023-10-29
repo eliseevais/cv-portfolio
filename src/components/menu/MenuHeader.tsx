@@ -6,7 +6,7 @@ type MenuPropsType = {
   menuItems: Array<string>;
 };
 
-export const Menu = (props: MenuPropsType) => {
+export const MenuHeader = (props: MenuPropsType) => {
   return (
     <MenuStyled>
       <ul>
@@ -27,7 +27,6 @@ const MenuStyled = styled.nav`
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding-right: 10px;
   }
 
   @media ${myTheme.media.tablet} {
