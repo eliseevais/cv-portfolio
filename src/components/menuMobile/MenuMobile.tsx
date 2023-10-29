@@ -10,7 +10,7 @@ export const MenuMobile = (props: MenuPropsType) => {
   return (
     <MobileMenuWrapper>
         <MenuMobileStyled>
-          <BurgerButton isOpen={false}>
+          <BurgerButton isOpen={true}>
             <span></span>
           </BurgerButton>
         </MenuMobileStyled>
