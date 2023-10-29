@@ -21,7 +21,7 @@ const SkillStyled = styled.div`
   color: ${myTheme.colors.accentA};
 `;
 
-const SkillTitle = styled.h3`
+const SkillTitle = styled.h4`
   display: flex;
   justify-content: center;
   margin-top: 40px;

@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { myTheme } from "./Theme.styled";
+import { myFont } from "./Common";
 
 export const GlobalStyles = createGlobalStyle`
   *,
@@ -29,25 +30,44 @@ export const GlobalStyles = createGlobalStyle`
   button {
     background-color: unset;
     border: unset;
+
+    ${myFont({
+      weight: 400,
+      lineHeight: 1.5,
+      Fmax: 26,
+      Fmin: 18,
+    })}
   }
 
   h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.5; 
     letter-spacing: 1.5px;
     text-transform: uppercase;
   }
-    
+
   h2 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 68px;
-    line-height: 1.5;
+    ${myFont({
+      weight: 600,
+      lineHeight: 1.5,
+      Fmax: 56,
+      Fmin: 46,
+    })}
+  letter-spacing: 5px;
+  }
+    
+  h3 {
+    ${myFont({
+      weight: 600,
+      lineHeight: 1.5,
+      Fmax: 68,
+      Fmin: 34,
+    })}
   }
 
-  h3 {
+  h4 {
     font-family: "Poppins", sans-serif;
     font-size: 26px;
     font-weight: 600;
@@ -71,10 +91,13 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5;
+    ${myFont({
+      weight: 400,
+      lineHeight: 1.5,
+      Fmax: 14,
+      Fmin: 8,
+    })}
+
     letter-spacing: 1.5px;
   } 
 
@@ -90,10 +113,13 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   span {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 26px;
-    line-height: 1.5;
+    ${myFont({
+      weight: 300,
+      lineHeight: 1.5,
+      Fmax: 26,
+      Fmin: 18,
+    })}
+
     letter-spacing: 10px;
     text-transform: uppercase;
   }

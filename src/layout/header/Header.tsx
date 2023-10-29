@@ -5,6 +5,7 @@ import { FlexWrapper } from "../../components/FlexWrapper";
 import { MenuHeader } from "../../components/menu/MenuHeader";
 import { myTheme } from "../../styles/Theme.styled";
 import { MenuMobile } from "../../components/menuMobile/MenuMobile";
+import { myFont } from "../../styles/Common";
 
 const items = ["Home", "Portfolio", "Contact"];
 
@@ -27,7 +28,6 @@ export const Header = (props: any) => {
 const HeaderStyled = styled.header`
   min-height: 70px;
   display: flex;
-  align-items: flex-end;
 
   position: fixed;
   z-index: 99;
@@ -35,15 +35,20 @@ const HeaderStyled = styled.header`
   top: 0;
   left: 0%;
   right: 0;
-  margin: 0 14px;
 
-  backdrop-filter: brightness(40%);
+  ${Container} {
+    outline: 1px solid ${myTheme.colors.accentB};
+    backdrop-filter: brightness(40%);
+    padding: 0 14px;
+  }
 `;
 
 const LogoStyled = styled.div`
-  font-family: "Alex Brush", "cursive";
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0em;
+  ${myFont({
+    family: '"Alex Brush", "cursive"',
+    weight: 400,
+    lineHeight: 1.5,
+    Fmax: 32,
+    Fmin: 14,
+  })}
 `;

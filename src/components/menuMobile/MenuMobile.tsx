@@ -8,12 +8,12 @@ type MenuPropsType = {
 
 export const MenuMobile = (props: MenuPropsType) => {
   return (
-    <MobileMenuWrapper>
-        <MenuMobileStyled>
-          <BurgerButton isOpen={true}>
-            <span></span>
-          </BurgerButton>
-        </MenuMobileStyled>
+    <>
+      <MenuMobileStyled>
+        <BurgerButton isOpen={false}>
+          <span></span>
+        </BurgerButton>
+      </MenuMobileStyled>
 
       <MenuMobilePopup isOpen={false}>
         <ul>
@@ -26,13 +26,9 @@ export const MenuMobile = (props: MenuPropsType) => {
           })}
         </ul>
       </MenuMobilePopup>
-    </MobileMenuWrapper>
+    </>
   );
 };
-
-const MobileMenuWrapper = styled.div`
-  
-`
 
 const MenuMobileStyled = styled.nav`
   display: none;
@@ -52,7 +48,7 @@ const MenuMobilePopup = styled.div<{ isOpen: boolean }>`
 
   background-color: ${myTheme.colors.backgroundA};
   border: 1px solid ${myTheme.colors.accentB};
-  
+
   position: absolute;
   top: 0;
   left: 0;
@@ -82,11 +78,11 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   width: 20px;
   height: 20px;
   z-index: 9999;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 
   position: fixed;
   top: 40px;
-  right: 100px;
+  right: calc(100% - 95%);
 
   span {
     display: block;

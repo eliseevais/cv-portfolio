@@ -12,10 +12,6 @@ export const Button = styled.button`
   );
   color: ${myTheme.colors.accentA};
 
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 38px;
   letter-spacing: 5%;
   margin-top: 34px;
   cursor: pointer;

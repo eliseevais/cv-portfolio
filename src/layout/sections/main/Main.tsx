@@ -5,22 +5,27 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Button } from "../../../components/Button";
 import mainPhotoSmall from "../../../assets/img/mainPhotoSmallVertical.jpg";
 import { Container } from "../../../components/Container";
+import { myFont } from "../../../styles/Common";
 
 export const Main = () => {
   return (
     <Container>
       <MainStyled>
-        <FlexWrapper align="center" justify="space-between">
-          <div>
-            <span>welcome</span>
-            <h2>
-              I'm Irina <br /> Eliseeva
-            </h2>
-            <MainTitle>Front-end web developer</MainTitle>
-            <Button>Download CV</Button>
-          </div>
+        <FlexWrapper
+          direction="column"
+          align="flex-start"
+          justify="space-around"
+        >
+          <span>welcome</span>
+          <h3>
+            I'm Irina <br /> Eliseeva
+          </h3>
+          <h1>Front-end web developer</h1>
+          <Button>Download CV</Button>
         </FlexWrapper>
-        <PhotoStyled src={mainPhotoSmall} alt="myPhoto" />
+        <PhotoWrapper>
+          <PhotoStyled src={mainPhotoSmall} alt="myPhoto" />
+        </PhotoWrapper>
       </MainStyled>
     </Container>
   );
@@ -29,16 +34,64 @@ export const Main = () => {
 const MainStyled = styled.section`
   min-height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 0 14px;
+  outline: 1px solid ${myTheme.colors.accentB};
+
+  @media ${myTheme.media.bigTablet} {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    
+    ${FlexWrapper} {
+      align-items: center;
+    }
+  }
+
+  @media ${myTheme.media.tablet} {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    
+    ${FlexWrapper} {
+      align-items: center;
+    }
+
+    span {
+      margin-top: 30px;
+    }
+
+    ${Button} {
+      width: 190px;
+      height: 50px;
+      margin-bottom: 80px;
+    }
+  }
+
+  @media ${myTheme.media.mobile} {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+`;
+
+const PhotoWrapper = styled.div`
 `;
 
 const PhotoStyled = styled.img`
-  max-width: calc(60%);
-  max-height: 90vh;
+  max-width: 560px;
+  width: 100%;
+  height: 800px;
   object-fit: cover;
+  object-position: center;
   align-self: flex-start;
-`;
+  aspect-ratio: 3/4;
 
-const MainTitle = styled.h1``;
+  @media ${myTheme.media.tablet} {
+    width: 465px;
+    height: 660px;
+  }
+
+  @media ${myTheme.media.mobile} {
+    width: 310px;
+    height: 440px;
+  }
+`;
