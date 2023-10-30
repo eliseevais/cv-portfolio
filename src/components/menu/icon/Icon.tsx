@@ -12,7 +12,7 @@ type IconPropsType = {
 
 export const Icon = (props: IconPropsType) => {
   return (
-    <svg
+    <SvgStyled
       width={props.width || "140px"}
       height={props.height || "140px"}
       viewBox={props.viewBox || "0 0 16 16"}
@@ -27,7 +27,7 @@ export const Icon = (props: IconPropsType) => {
       </linearGradient>
 
       <use xlinkHref={`${sprite}#${props.iconId}`} />
-    </svg>
+    </SvgStyled>
   );
 };
 
@@ -46,3 +46,11 @@ export const IconFooter = (props: IconPropsType) => {
     </svg>
   );
 };
+
+const SvgStyled = styled.svg`
+  @media ${myTheme.media.tablet} {
+    width: 100px;
+    height: 100px;
+    viewBox: "0 0 16 16";
+  }
+`;

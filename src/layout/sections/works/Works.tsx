@@ -41,6 +41,15 @@ export const Works = () => {
 const WorksStyled = styled.section`
   padding-top: 120px;
   margin: 0 14px;
+  outline: 1px solid ${myTheme.colors.accentB};
+
+   @media ${myTheme.media.tablet} {
+    padding-top: 80px;
+
+    ${SectionTitle} {
+      margin-bottom: 32px;
+    }
+  }
 `;
 
 const SectionTitleStyled = styled.div`

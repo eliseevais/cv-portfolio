@@ -25,4 +25,8 @@ const SkillTitle = styled.h4`
   display: flex;
   justify-content: center;
   margin-top: 40px;
+
+  @media ${myTheme.media.tablet} {
+    margin: 16px 0 20px 0;
+  }
 `;

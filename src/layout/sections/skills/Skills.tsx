@@ -31,6 +31,19 @@ const SkillsStyled = styled.section`
   flex-direction: column;
   padding-top: 120px;
   margin: 0 14px;
+  outline: 1px solid ${myTheme.colors.accentB};
+
+  @media ${myTheme.media.tablet} {
+    padding-top: 40px;
+
+    ${SectionTitle} {
+      margin-bottom: 20px;
+    }
+
+    ${FlexWrapper} {
+      justify-content: space-evenly;
+    }
+  }
 `;
 
 const SectionTitleStyled = styled.div`
@@ -44,5 +57,12 @@ const SectionTitleStyled = styled.div`
     height: 2px;
     width: 70%;
     top: -10px;
+  }
+
+  @media ${myTheme.media.tablet} {
+    &::before {
+      content: "";
+      top: -4px;
+    }
   }
 `;

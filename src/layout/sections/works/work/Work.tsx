@@ -26,9 +26,11 @@ const ImgStyled = styled.img`
 
 const WorkStyled = styled.div`
   margin-bottom: 40px;
+  min-width: 300px;
   width: 620px;
   height: 450px;
   position: relative;
+  flex-grow: 1;
 
   &:hover {
     ${ImgStyled} {
@@ -38,7 +40,7 @@ const WorkStyled = styled.div`
   }
 `;
 
-const TitleProject = styled.h3`
+const TitleProject = styled.h4`
   position: absolute;
   bottom: 66px;
   left: 65px;
