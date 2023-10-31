@@ -10,9 +10,7 @@ export const Skills = () => {
   return (
     <Container>
       <SkillsStyled>
-        <SectionTitle>
-          <SectionTitleStyled>My skills</SectionTitleStyled>
-        </SectionTitle>
+        <SectionTitle>My skills</SectionTitle>
         <FlexWrapper justify="space-between" align="center" wrap="wrap">
           <Skill iconId="html" title="HTML" />
           <Skill iconId="css" title="CSS" />
@@ -29,9 +27,22 @@ export const Skills = () => {
 const SkillsStyled = styled.section`
   display: flex;
   flex-direction: column;
-  padding-top: 120px;
-  margin: 0 14px;
+  padding: 120px 14px 0;
   outline: 1px solid ${myTheme.colors.accentB};
+
+  ${SectionTitle} {
+    position: relative;
+    width: fit-content;
+
+    ::before {
+      content: "";
+      border-bottom: 1px solid ${myTheme.colors.accentA};
+      position: absolute;
+      height: 2px;
+      width: 70%;
+      top: -10px;
+    }
+  }
 
   @media ${myTheme.media.tablet} {
     padding-top: 40px;
@@ -43,26 +54,14 @@ const SkillsStyled = styled.section`
     ${FlexWrapper} {
       justify-content: space-evenly;
     }
-  }
-`;
 
-const SectionTitleStyled = styled.div`
-  position: relative;
-  width: fit-content;
-
-  ::before {
-    content: "";
-    border-bottom: 1px solid ${myTheme.colors.accentA};
-    position: absolute;
-    height: 2px;
-    width: 70%;
-    top: -10px;
-  }
-
-  @media ${myTheme.media.tablet} {
-    &::before {
-      content: "";
-      top: -4px;
+    ${SectionTitle} {
+      @media ${myTheme.media.tablet} {
+        &::before {
+          content: "";
+          top: -4px;
+        }
+      }
     }
   }
 `;

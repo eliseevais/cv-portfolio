@@ -35,10 +35,10 @@ export const About = () => {
 
 const AboutStyled = styled.section`
   background-color: ${myTheme.colors.backgroundB};
-  padding: 120px 14px;
 
   ${Container} {
     outline: 1px solid ${myTheme.colors.accentB};
+    padding: 120px 14px;
   }
 
   p {
@@ -46,25 +46,19 @@ const AboutStyled = styled.section`
   }
 
   @media ${myTheme.media.bigTablet} {
+
+    ${Container} {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+
     ${FlexWrapper} {
       flex-direction: column;
       flex-wrap: wrap;
     }
 
     ${SectionTitle} {
-      margin-bottom: 0;
-    }
-  }
-
-  @media ${myTheme.media.tablet} {
-    padding: 60px 14px 40px 14px;
-
-    ${FlexWrapper} {
-      flex-direction: column;
-    }
-
-    ${SectionTitle} {
-      margin-bottom: 0;
+      margin-top: 40px;
     }
   }
 `;

@@ -26,8 +26,8 @@ export const Contacts = () => {
 };
 
 const ContactsStyled = styled.section`
-  padding: 100px 0 120px 0;
-  margin: 0 14px;
+  outline: 1px solid ${myTheme.colors.accentB};
+  padding: 100px 14px 120px;
 
   ${SectionTitle} {
     margin-bottom: 40px;
@@ -36,6 +36,10 @@ const ContactsStyled = styled.section`
   textarea {
     resize: none;
     height: 160px;
+  }
+
+  @media ${myTheme.media.tablet} {
+    padding: 40px 14px;
   }
 `;
 

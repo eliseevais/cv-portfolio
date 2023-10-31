@@ -16,9 +16,7 @@ export const Works = () => {
   return (
     <Container>
       <WorksStyled>
-        <SectionTitle>
-          <SectionTitleStyled>My work experience</SectionTitleStyled>
-        </SectionTitle>
+        <SectionTitle>My work experience</SectionTitle>
         <FlexWrapper justify="space-between" wrap="wrap">
           <Work title="Social network" text="Lorem" src={socialNetwork} />
           <Work title="Task tracker" text="Lorem" src={toDoList} />
@@ -39,29 +37,43 @@ export const Works = () => {
 };
 
 const WorksStyled = styled.section`
-  padding-top: 120px;
-  margin: 0 14px;
+  padding: 120px 14px 0;
   outline: 1px solid ${myTheme.colors.accentB};
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
-   @media ${myTheme.media.tablet} {
-    padding-top: 80px;
+  ${SectionTitle} {
+    position: relative;
+    width: fit-content;
 
-    ${SectionTitle} {
-      margin-bottom: 32px;
+    ::before {
+      content: "";
+      border-bottom: 1px solid ${myTheme.colors.accentA};
+      position: absolute;
+      height: 2px;
+      width: 70%;
+      top: -10px;
     }
   }
-`;
 
-const SectionTitleStyled = styled.div`
-  position: relative;
-  width: fit-content;
+  @media ${myTheme.media.largeTablet} {
+    padding-top: 70px;
+    align-items: center;
 
-  ::before {
-    content: "";
-    border-bottom: 1px solid ${myTheme.colors.accentA};
-    position: absolute;
-    height: 2px;
-    width: 70%;
-    top: -10px;
+    ${FlexWrapper} {
+      justify-content: center;
+      align-items: center;
+    }
+
+    ${SectionTitle} {
+      margin: 0 auto 32px;
+
+      @media ${myTheme.media.largeTablet} {
+      &::before {
+        display: none;
+      }
+    }
+    }
   }
 `;

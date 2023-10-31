@@ -68,17 +68,25 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   h4 {
-    font-family: "Poppins", sans-serif;
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 38px;
+    ${myFont({
+      weight: 600,
+      lineHeight: 1.5,
+      Fmax: 26,
+      Fmin: 14,
+    })}
+
     letter-spacing: 3px;
   }
 
   h6 {
-    font-family: "Fira Code", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
+    ${myFont({
+      family: '"Fira Code", sans-serif',
+      weight: 500,
+      lineHeight: 1.5,
+      Fmax: 12,
+      Fmin: 10,
+    })}
+
     text-transform: none;
   }
 
@@ -106,9 +114,14 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   small {
-    font-family: "Fira Code", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
+    ${myFont({
+      family: '"Fira Code", sans-serif',
+      weight: 400,
+      lineHeight: 1.5,
+      Fmax: 12,
+      Fmin: 10,
+    })}
+    
     text-transform: none;
   }
 

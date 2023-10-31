@@ -34,4 +34,9 @@ export const Button = styled.button`
   &:hover {
     transform: scale(1);
   }
+
+  @media ${myTheme.media.tablet} {
+    width: 190px;
+    height: 50px;
+  }
 `;

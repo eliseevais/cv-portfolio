@@ -11,26 +11,34 @@ type WorkPropsType = {
 export const Work = (props: WorkPropsType) => {
   return (
     <WorkStyled>
-      <ImgStyled src={props.src} alt="photo" />
+      <ImgWrapper>
+        <ImgStyled src={props.src} alt="photo" />
+      </ImgWrapper>
       <TitleProject>{props.title}</TitleProject>
       <Link href={"#"}>Visit</Link>
     </WorkStyled>
   );
 };
 
+const ImgWrapper = styled.div`
+  
+`
+
 const ImgStyled = styled.img`
-  width: 620px;
-  height: 450px;
+  max-width: 600px; 
+  width: 100%;
   object-fit: cover;
+  aspect-ratio: 4/3;
+
 `;
 
 const WorkStyled = styled.div`
-  margin-bottom: 40px;
-  min-width: 300px;
-  width: 620px;
-  height: 450px;
+  margin: 10px;
+  max-width: 600px;
+  width: 100%;
   position: relative;
   flex-grow: 1;
+  aspect-ratio: 4/3;
 
   &:hover {
     ${ImgStyled} {
@@ -38,18 +46,40 @@ const WorkStyled = styled.div`
       transition: 0.5s;
     }
   }
+
+  @media ${myTheme.media.largeTablet} {
+    max-width: 450px;
+    width: 360px;
+    margin-bottom: 8px;
+    gap: 10%
+  }
+
+  @media ${myTheme.media.mobile} {
+    max-width: 360px;
+    width: 300px;
+  }
 `;
 
 const TitleProject = styled.h4`
   position: absolute;
-  bottom: 66px;
   left: 65px;
+  bottom: 66px;
+
+  @media ${myTheme.media.tablet} {
+    left: 42px;
+    bottom: 42px;
+  }
 `;
 
 const Link = styled.a`
   cursor: pointer;
   letter-spacing: 3px;
   position: absolute;
-  bottom: 46px;
   left: 65px;
+  bottom: 46px;
+
+  @media ${myTheme.media.tablet} {
+    left: 42px;
+    bottom: 28px;
+  }
 `;

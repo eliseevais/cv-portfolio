@@ -36,7 +36,7 @@ const MainStyled = styled.section`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 14px;
+  padding: 60px 14px;
   outline: 1px solid ${myTheme.colors.accentB};
 
   @media ${myTheme.media.bigTablet} {
@@ -58,12 +58,6 @@ const MainStyled = styled.section`
 
     span {
       margin-top: 30px;
-    }
-
-    ${Button} {
-      width: 190px;
-      height: 50px;
-      margin-bottom: 80px;
     }
   }
 

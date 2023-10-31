@@ -58,15 +58,15 @@ export const Footer = () => {
 };
 
 const FooterStyled = styled.footer`
-  padding-bottom: 20px;
+  outline: 1px solid ${myTheme.colors.accentB};
+  padding: 0 14px 20px;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  margin: 0 14px;
+  justify-content: center;
 `;
 
 const ContactsFooter = styled.div`
-  min-width: 800px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -74,8 +74,6 @@ const ContactsFooter = styled.div`
 `;
 
 const MediaBlock = styled.div`
-  min-width: 100px;
-
   h6 {
     margin-bottom: 0.5em;
   }
@@ -103,4 +101,6 @@ const SocialLink = styled.a`
   }
 `;
 
-const Copyright = styled.small``;
+const Copyright = styled.small`
+align-self: center;
+`;

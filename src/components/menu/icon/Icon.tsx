@@ -33,7 +33,7 @@ export const Icon = (props: IconPropsType) => {
 
 export const IconFooter = (props: IconPropsType) => {
   return (
-    <svg
+    <SvgStyledFooter
       width={props.width || "140px"}
       height={props.height || "140px"}
       viewBox={props.viewBox || "0 0 16 16"}
@@ -43,14 +43,22 @@ export const IconFooter = (props: IconPropsType) => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <use xlinkHref={`${sprite}#${props.iconId}`} />
-    </svg>
+    </SvgStyledFooter>
   );
 };
 
 const SvgStyled = styled.svg`
   @media ${myTheme.media.tablet} {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     viewBox: "0 0 16 16";
+  }
+`;
+
+const SvgStyledFooter = styled.svg`
+  @media ${myTheme.media.tablet} {
+    width: 20px;
+    height: 20px;
+    viewBox: "0 0 8 8";
   }
 `;
