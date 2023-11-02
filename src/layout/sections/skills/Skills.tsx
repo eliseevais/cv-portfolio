@@ -28,7 +28,7 @@ const SkillsStyled = styled.section`
   display: flex;
   flex-direction: column;
   padding: 120px 14px 0;
-  outline: 1px solid ${myTheme.colors.accentB};
+  /* outline: 1px solid ${myTheme.colors.accentB}; */
 
   ${SectionTitle} {
     position: relative;

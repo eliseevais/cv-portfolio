@@ -26,7 +26,7 @@ export const Contacts = () => {
 };
 
 const ContactsStyled = styled.section`
-  outline: 1px solid ${myTheme.colors.accentB};
+  /* outline: 1px solid ${myTheme.colors.accentB}; */
   padding: 100px 14px 120px;
 
   ${SectionTitle} {

@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { myTheme } from "../../styles/Theme.styled";
+import { myTheme } from "../../../styles/Theme.styled";
 
 type MenuPropsType = {
   menuItems: Array<string>;

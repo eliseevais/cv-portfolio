@@ -37,7 +37,7 @@ const MainStyled = styled.section`
   justify-content: space-around;
   align-items: center;
   padding: 60px 14px;
-  outline: 1px solid ${myTheme.colors.accentB};
+  /* outline: 1px solid ${myTheme.colors.accentB}; */
 
   @media ${myTheme.media.bigTablet} {
     flex-wrap: wrap-reverse;

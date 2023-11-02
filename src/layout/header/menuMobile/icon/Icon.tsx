@@ -1,7 +1,7 @@
 import React from "react";
 import sprite from "../../../assets/img/sprite.svg";
-import { myTheme } from "../../../styles/Theme.styled";
 import styled from "styled-components";
+import { myTheme } from "../../../../styles/Theme.styled";
 
 type IconPropsType = {
   iconId: string;

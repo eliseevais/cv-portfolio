@@ -38,7 +38,7 @@ export const Works = () => {
 
 const WorksStyled = styled.section`
   padding: 120px 14px 0;
-  outline: 1px solid ${myTheme.colors.accentB};
+  /* outline: 1px solid ${myTheme.colors.accentB}; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;

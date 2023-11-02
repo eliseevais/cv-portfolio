@@ -58,7 +58,7 @@ export const Footer = () => {
 };
 
 const FooterStyled = styled.footer`
-  outline: 1px solid ${myTheme.colors.accentB};
+  /* outline: 1px solid ${myTheme.colors.accentB}; */
   padding: 0 14px 20px;
   display: flex;
   flex-direction: column;

@@ -37,7 +37,7 @@ const AboutStyled = styled.section`
   background-color: ${myTheme.colors.backgroundB};
 
   ${Container} {
-    outline: 1px solid ${myTheme.colors.accentB};
+    /* outline: 1px solid ${myTheme.colors.accentB}; */
     padding: 120px 14px;
   }
 
