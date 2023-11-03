@@ -11,11 +11,7 @@ export const Main = () => {
   return (
     <Container>
       <MainStyled>
-        <FlexWrapper
-          direction="column"
-          align="flex-start"
-          justify="space-around"
-        >
+        <FlexWrapper direction="column" align="flex-start" justify="center">
           <span>welcome</span>
           <h3>
             I'm Irina <br /> Eliseeva
@@ -34,15 +30,17 @@ export const Main = () => {
 const MainStyled = styled.section`
   min-height: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   padding: 60px 14px;
   /* outline: 1px solid ${myTheme.colors.accentB}; */
+  position: relative;
 
   @media ${myTheme.media.bigTablet} {
     flex-wrap: wrap-reverse;
     justify-content: center;
-    
+    align-items: flex-start;
+
     ${FlexWrapper} {
       align-items: center;
     }
@@ -51,7 +49,7 @@ const MainStyled = styled.section`
   @media ${myTheme.media.tablet} {
     flex-wrap: wrap-reverse;
     justify-content: center;
-    
+
     ${FlexWrapper} {
       align-items: center;
     }
@@ -67,25 +65,42 @@ const MainStyled = styled.section`
   }
 `;
 
-const PhotoWrapper = styled.div`
-`;
+const PhotoWrapper = styled.div``;
 
 const PhotoStyled = styled.img`
   max-width: 560px;
   width: 100%;
-  height: 800px;
+  height: 810px;
   object-fit: cover;
-  object-position: center;
+  /* object-position: center; */
   align-self: flex-start;
   aspect-ratio: 3/4;
+  position: absolute;
+  top: 0;
+  right: calc(5%);
+
+  @media ${myTheme.media.moreThenTwoK} {
+    margin: auto;
+    top: 0; auto: 0; bottom: 0; right: 0;
+  }
+
+  @media ${myTheme.media.bigTablet} {
+    margin: 0 auto;
+    width: 440px;
+    height: 620px;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
 
   @media ${myTheme.media.tablet} {
-    width: 465px;
-    height: 660px;
+    width: 440px;
+    height: 620px;
+    top: 0; left: 0; bottom: 0; right: 0;
   }
+
 
   @media ${myTheme.media.mobile} {
     width: 310px;
     height: 440px;
+    top: 0; left: 0; bottom: 0; right: 0;
   }
 `;
