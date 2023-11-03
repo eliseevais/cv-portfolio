@@ -15,6 +15,6 @@ export const myFont = (
   font-weigh: ${weight || 400};
   color: ${color || myTheme.colors.accentA};
   line-height: ${lineHeight || 1.2};
-  font-size: calc( (100vw - 360px)/(1920 - 360) * (${Fmax} - ${Fmin}) + ${Fmin}px);
+  font-size: calc( (100vw - 360px)/(1440 - 360) * (${Fmax} - ${Fmin}) + ${Fmin}px);
 `
 
