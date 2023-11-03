@@ -1,8 +1,11 @@
 import React from "react";
-import { Styles } from "./MenuMobile_Styles";
 import { Menu } from "../menu/Menu";
+import { Styles } from "../HeaderMenu_Styles";
 
-export const MenuMobile = (props: {menuItems: Array<string>}) => {
+
+export const MenuMobile: React.FC<{ menuItems: Array<string> }> = (props: {
+  menuItems: Array<string>;
+}) => {
   return (
     <>
       <Styles.MenuMobile>

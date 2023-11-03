@@ -1,11 +1,9 @@
 import styled from "styled-components";
 import { Container } from "../../components/Container";
 import { myFont } from "../../styles/Common";
-import { myTheme } from "../../styles/Theme.styled";
-
 
 const Header = styled.header`
-  min-height: 70px;
+  min-height: 70px; 
   display: flex;
 
   position: fixed;
@@ -16,8 +14,7 @@ const Header = styled.header`
   right: 0;
 
   ${Container} {
-    outline: 1px solid ${myTheme.colors.accentB};
-    backdrop-filter: brightness(40%);
+    backdrop-filter: brightness(50%);
     padding: 0 14px;
   }
 `;
@@ -26,7 +23,7 @@ const LogoStyled = styled.div`
   ${myFont({
     family: '"Alex Brush", "cursive"',
     weight: 400,
-    lineHeight: 1.5,
+    lineHeight: 0.85,
     Fmax: 32,
     Fmin: 14,
   })}
@@ -34,5 +31,5 @@ const LogoStyled = styled.div`
 
 export const Styles = {
   Header,
-  LogoStyled
-}
+  LogoStyled,
+};

@@ -1,53 +1,10 @@
 import styled, { css } from "styled-components";
 import { myTheme } from "../../../styles/Theme.styled";
 
-const MenuMobile = styled.nav`
-  display: none;
-
-  @media ${myTheme.media.tablet} {
-    display: block;
-  }
-`;
-
-const MenuMobilePopup = styled.div<{ isOpen: boolean }>`
-  display: none;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-
-  background-color: ${myTheme.colors.backgroundA};
-  border: 1px solid ${myTheme.colors.accentB};
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 999;
-
-  ${(props) =>
-    props.isOpen &&
-    css<{ isOpen: boolean }>`
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    `}
-
-  ul {
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-right: 10px;
-  }
-`;
-
 const BurgerButton = styled.button<{ isOpen: boolean }>`
   width: 20px;
   height: 20px;
   z-index: 9999;
-  /* outline: 1px solid red; */
 
   position: fixed;
   top: 40px;
@@ -107,8 +64,82 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   }
 `;
 
+const Link = styled.a`
+  color: ${myTheme.colors.accentB};
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+
+  &:active {
+    color: ${myTheme.colors.accentA};
+  }
+
+  &:hover {
+    color: ${myTheme.colors.accentA};
+  }
+`;
+
+const MenuItem = styled.li``;
+
+const MenuDesktop = styled.nav`
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  @media ${myTheme.media.tablet} {
+    display: none;
+  }
+`;
+
+const MenuMobile = styled.nav`
+  display: none;
+
+  @media ${myTheme.media.tablet} {
+    display: block;
+  }
+`;
+
+const MenuMobilePopup = styled.div<{ isOpen: boolean }>`
+  display: none;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+
+  background-color: ${myTheme.colors.backgroundA};
+  border: 1px solid ${myTheme.colors.accentB};
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+
+  ${(props) =>
+    props.isOpen &&
+    css<{ isOpen: boolean }>`
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    `}
+
+  ul {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+  }
+`;
+
 export const Styles = {
+  BurgerButton,
+  Link,
+  MenuItem,
+  MenuDesktop,
   MenuMobile,
   MenuMobilePopup,
-  BurgerButton,
 };

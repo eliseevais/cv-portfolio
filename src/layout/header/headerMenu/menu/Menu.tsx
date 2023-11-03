@@ -1,5 +1,5 @@
 import React from "react";
-import { Styles } from "./Menu_Styles";
+import { Styles } from "../HeaderMenu_Styles";
 
 export const Menu: React.FC<{ menuItems: Array<string> }> = (props: {
   menuItems: Array<string>;
@@ -8,9 +8,9 @@ export const Menu: React.FC<{ menuItems: Array<string> }> = (props: {
     <ul>
       {props.menuItems.map((item, index) => {
         return (
-          <Styles.ListItem key={index}>
+          <Styles.MenuItem key={index}>
             <Styles.Link href="#">{item}</Styles.Link>
-          </Styles.ListItem>
+          </Styles.MenuItem>
         );
       })}
     </ul>
