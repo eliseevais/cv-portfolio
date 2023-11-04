@@ -1,32 +1,17 @@
 import React from "react";
 import { Icon } from "../../../../components/menu/icon/Icon";
-import { myTheme } from "../../../../styles/Theme.styled";
-import styled from "styled-components";
+import { Styles } from "../Skills_Styles";
 
 type SkillPropsType = {
   iconId: string;
   title: string;
-}
-
-export const Skill = (props: SkillPropsType) => {
-  return (
-    <SkillStyled>
-      <Icon iconId={props.iconId} />
-      <SkillTitle>{props.title}</SkillTitle>
-    </SkillStyled>
-  );
 };
 
-const SkillStyled = styled.div`
-  color: ${myTheme.colors.accentA};
-`;
-
-const SkillTitle = styled.h4`
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-
-  @media ${myTheme.media.tablet} {
-    margin: 16px 0 20px 0;
-  }
-`;
+export const Skill: React.FC<SkillPropsType> = (props: SkillPropsType) => {
+  return (
+    <Styles.Skill>
+        <Icon iconId={props.iconId} />
+      <Styles.SkillTitle>{props.title}</Styles.SkillTitle>
+    </Styles.Skill>
+  );
+};

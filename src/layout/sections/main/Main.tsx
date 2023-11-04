@@ -1,8 +1,8 @@
 import React from "react";
-import { FlexWrapper } from "../../../components/FlexWrapper";
-import { Button } from "../../../components/Button";
+import { FlexWrapper } from "../../../components/FlexWrapper_Styles";
+import { Button } from "../../../components/Button_Styles";
 import mainPhotoSmall from "../../../assets/img/mainPhotoSmallVertical.jpg";
-import { Container } from "../../../components/Container";
+import { Container } from "../../../components/Container_Styles";
 import { Styles } from "./Main_Styles";
 
 export const Main: React.FC = () => {

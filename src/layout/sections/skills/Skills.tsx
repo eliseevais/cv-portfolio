@@ -1,67 +1,32 @@
 import React from "react";
-import styled from "styled-components";
-import { myTheme } from "../../../styles/Theme.styled";
 import { Skill } from "./skill/Skill";
-import { FlexWrapper } from "../../../components/FlexWrapper";
-import { SectionTitle } from "../../../components/SectionTitle";
-import { Container } from "../../../components/Container";
+import { FlexWrapper } from "../../../components/FlexWrapper_Styles";
+import { SectionTitle } from "../../../components/SectionTitle_Styles";
+import { Container } from "../../../components/Container_Styles";
+import { Styles } from "./Skills_Styles";
 
-export const Skills = () => {
+const skillsData = [
+  { iconId: "html", title: "HTML" },
+  { iconId: "css", title: "CSS" },
+  { iconId: "javaScript", title: "JS" },
+  { iconId: "typeScript", title: "TS" },
+  { iconId: "react", title: "React" },
+  { iconId: "git", title: "git" },
+];
+
+export const Skills: React.FC = () => {
   return (
     <Container>
-      <SkillsStyled>
+      <Styles.Skills>
         <SectionTitle>My skills</SectionTitle>
         <FlexWrapper justify="space-between" align="center" wrap="wrap">
-          <Skill iconId="html" title="HTML" />
-          <Skill iconId="css" title="CSS" />
-          <Skill iconId="javaScript" title="JS" />
-          <Skill iconId="typeScript" title="TS" />
-          <Skill iconId="react" title="React" />
-          <Skill iconId="git" title="Git" />
+          {skillsData.map((skill, index) => {
+            return (
+              <Skill iconId={skill.iconId} key={index} title={skill.title} />
+            );
+          })}
         </FlexWrapper>
-      </SkillsStyled>
+      </Styles.Skills>
     </Container>
   );
 };
-
-const SkillsStyled = styled.section`
-  display: flex;
-  flex-direction: column;
-  padding: 120px 14px 0;
-  /* outline: 1px solid ${myTheme.colors.accentB}; */
-
-  ${SectionTitle} {
-    position: relative;
-    width: fit-content;
-
-    ::before {
-      content: "";
-      border-bottom: 1px solid ${myTheme.colors.accentA};
-      position: absolute;
-      height: 2px;
-      width: 70%;
-      top: -10px;
-    }
-  }
-
-  @media ${myTheme.media.tablet} {
-    padding-top: 40px;
-
-    ${SectionTitle} {
-      margin-bottom: 20px;
-    }
-
-    ${FlexWrapper} {
-      justify-content: space-evenly;
-    }
-
-    ${SectionTitle} {
-      @media ${myTheme.media.tablet} {
-        &::before {
-          content: "";
-          top: -4px;
-        }
-      }
-    }
-  }
-`;

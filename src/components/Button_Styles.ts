@@ -13,7 +13,6 @@ export const Button = styled.button`
   color: ${myTheme.colors.accentA};
 
   letter-spacing: 5%;
-  margin-top: 34px;
   cursor: pointer;
   position: relative;
   transition: 0.2s;

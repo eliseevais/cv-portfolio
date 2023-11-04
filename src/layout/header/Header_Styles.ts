@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container } from "../../components/Container";
+import { Container } from "../../components/Container_Styles";
 import { myFont } from "../../styles/Common";
 
 const Header = styled.header`

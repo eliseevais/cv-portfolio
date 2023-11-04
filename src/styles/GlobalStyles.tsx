@@ -78,18 +78,6 @@ export const GlobalStyles = createGlobalStyle`
     letter-spacing: 3px;
   }
 
-  h6 {
-    ${myFont({
-      family: '"Fira Code", sans-serif',
-      weight: 500,
-      lineHeight: 1.5,
-      Fmax: 12,
-      Fmin: 10,
-    })}
-
-    text-transform: none;
-  }
-
   input, textarea {
     font-family: "Poppins", sans-serif;
     font-weight: 300;

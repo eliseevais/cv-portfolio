@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { myTheme } from "../../../styles/Theme.styled";
-import { FlexWrapper } from "../../../components/FlexWrapper";
+import { FlexWrapper } from "../../../components/FlexWrapper_Styles";
+import { Button } from "../../../components/Button_Styles";
 
 const Main = styled.section`
   min-height: 100vh;
@@ -8,8 +9,11 @@ const Main = styled.section`
   justify-content: flex-start;
   align-items: center;
   padding: 60px 14px;
-  /* outline: 1px solid ${myTheme.colors.accentB}; */
   position: relative;
+
+  ${Button} {
+    margin-top: 34px;
+  }
 
   @media ${myTheme.media.bigTablet} {
     flex-wrap: wrap-reverse;
@@ -22,8 +26,6 @@ const Main = styled.section`
   }
 
   @media ${myTheme.media.tablet} {
-    flex-wrap: wrap-reverse;
-    justify-content: center;
 
     ${FlexWrapper} {
       align-items: center;
@@ -35,8 +37,6 @@ const Main = styled.section`
   }
 
   @media ${myTheme.media.mobile} {
-    flex-wrap: wrap-reverse;
-    justify-content: center;
   }
 `;
 

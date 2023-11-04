@@ -1,7 +1,7 @@
 import React from "react";
 import sprite from "../../../assets/img/sprite.svg";
 import { myTheme } from "../../../styles/Theme.styled";
-import styled from "styled-components";
+import { Styles } from "./Icon_Styles";
 
 type IconPropsType = {
   iconId: string;
@@ -12,7 +12,7 @@ type IconPropsType = {
 
 export const Icon = (props: IconPropsType) => {
   return (
-    <SvgStyled
+    <Styles.IconWrapperSkills
       width={props.width || "140px"}
       height={props.height || "140px"}
       viewBox={props.viewBox || "0 0 16 16"}
@@ -27,38 +27,22 @@ export const Icon = (props: IconPropsType) => {
       </linearGradient>
 
       <use xlinkHref={`${sprite}#${props.iconId}`} />
-    </SvgStyled>
+    </Styles.IconWrapperSkills>
   );
 };
 
 export const IconFooter = (props: IconPropsType) => {
   return (
-    <SvgStyledFooter
-      width={props.width || "140px"}
-      height={props.height || "140px"}
-      viewBox={props.viewBox || "0 0 16 16"}
+    <Styles.IconWrapperFooter
+      width={props.width || "40px"}
+      height={props.height || "40px"}
+      viewBox={props.viewBox || "0 0 40 40"}
       fill="currentColor"
       x="0"
       y="0"
       xmlns="http://www.w3.org/2000/svg"
     >
       <use xlinkHref={`${sprite}#${props.iconId}`} />
-    </SvgStyledFooter>
+    </Styles.IconWrapperFooter>
   );
 };
-
-const SvgStyled = styled.svg`
-  @media ${myTheme.media.tablet} {
-    width: 80px;
-    height: 80px;
-    viewBox: "0 0 16 16";
-  }
-`;
-
-const SvgStyledFooter = styled.svg`
-  @media ${myTheme.media.tablet} {
-    width: 20px;
-    height: 20px;
-    viewBox: "0 0 8 8";
-  }
-`;

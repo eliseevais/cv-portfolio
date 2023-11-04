@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -8,5 +7,4 @@ export const Container = styled.div`
   padding: 0;
   margin: 0 auto;
   box-sizing: border-box;
-  /* border: 1px solid yellow; */
 `;
