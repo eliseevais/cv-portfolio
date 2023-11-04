@@ -23,7 +23,7 @@ const LogoStyled = styled.div`
   ${myFont({
     family: '"Alex Brush", "cursive"',
     weight: 400,
-    lineHeight: 0.85,
+    lineHeight: 1.5,
     Fmax: 32,
     Fmin: 14,
   })}
