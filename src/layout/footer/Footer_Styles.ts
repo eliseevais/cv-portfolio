@@ -11,14 +11,18 @@ const ContactsFooter = styled.div`
 
 const Copyright = styled.small`
   align-self: center;
+  display: flex;
+  justify-content: center;
 `;
 
-const Footer = styled.footer`
+const Footer = styled.section`
   padding: 0 14px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 `;
+
 const MediaBlock = styled.div`
   small {
     margin-bottom: 0.5em;

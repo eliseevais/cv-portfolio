@@ -3,44 +3,49 @@ import { myTheme } from "../../../styles/Theme.styled";
 import { FlexWrapper } from "../../../components/FlexWrapper_Styles";
 import { Button } from "../../../components/Button_Styles";
 import { myFont } from "../../../styles/Common";
+import { Container } from "../../../components/Container_Styles";
 
 const Main = styled.section`
-  min-height: 90vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 14px;
-  /* position: relative; */
+  ${Container} {
+    min-height: 93vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 14px;
+    align-items: center;
+    /* position: relative; */
+  }
 
   p {
     display: none;
+  }
+
+  span {
+    margin-top: 30px;
   }
 
   ${Button} {
     margin-top: 34px;
   }
 
-  @media ${myTheme.media.bigTablet} {
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-    align-items: flex-start;
-
-    ${FlexWrapper} {
-      align-items: center;
-    }
-  }
-
   @media ${myTheme.media.tablet} {
-    ${FlexWrapper} {
+  
+    ${Container} {
+      flex-direction: column-reverse;
+      justify-content: center;
       align-items: center;
+      padding-top: 0;
     }
 
-    span {
-      margin-top: 30px;
+    ${FlexWrapper} {
+      justify-content: center;
+      align-items: center;
     }
   }
 
   @media ${myTheme.media.mobile} {
+    ${Container} {
+      padding: 0 14px 80px;
+    }
   }
 `;
 
@@ -59,38 +64,17 @@ const PhotoStyled = styled.img`
   top: 0;
   right: calc(5%); */
 
-  @media ${myTheme.media.moreThenTwoK} {
-    margin: auto;
-    top: 0;
-    auto: 0;
-    bottom: 0;
-    right: 0;
-  }
-
   @media ${myTheme.media.bigTablet} {
-    margin: 0 auto;
     width: 400px;
     height: 570px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
   }
 
   @media ${myTheme.media.tablet} {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
   }
 
   @media ${myTheme.media.mobile} {
-    width: 310px;
-    height: 440px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    width: 230px;
+    height: 360px;
   }
 `;
 
@@ -104,6 +88,10 @@ const TitleP = styled.div`
 
   letter-spacing: 10px;
   text-transform: uppercase;
+
+  @media ${myTheme.media.tablet} {
+    margin-top: 34px;
+  }
 `;
 
 export const Styles = {

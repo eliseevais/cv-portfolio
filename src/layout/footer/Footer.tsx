@@ -12,8 +12,8 @@ const socialItemData = [
 
 export const Footer: React.FC = () => {
   return (
-    <Container>
-      <Styles.Footer>
+    <Styles.Footer>
+      <Container>
         <FlexWrapper justify="space-between">
           <Styles.ContactsFooter>
             <small>irina.eliseeva1991@gmail.com</small>
@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
           </Styles.MediaBlock>
         </FlexWrapper>
         <Styles.Copyright>&copy; 2023, Made by Irina Eliseeva</Styles.Copyright>
-      </Styles.Footer>
-    </Container>
+      </Container>
+    </Styles.Footer>
   );
 };

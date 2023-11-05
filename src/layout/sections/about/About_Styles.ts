@@ -9,7 +9,6 @@ const About = styled.section`
   position: relative;
 
   ${Container} {
-    /* outline: 1px solid ${myTheme.colors.accentB}; */
     padding: 120px 14px;
   }
 

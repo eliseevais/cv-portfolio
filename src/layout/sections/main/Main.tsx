@@ -8,8 +8,8 @@ import mainPhotoSmall from "../../../assets/img/mainPhotoSmallVertical.jpg";
 
 export const Main: React.FC = () => {
   return (
-    <Container>
-      <Styles.Main>
+    <Styles.Main>
+      <Container>
         <FlexWrapper direction="column" align="flex-start" justify="center">
           <Styles.TitleP>welcome</Styles.TitleP>
           <h3>
@@ -31,7 +31,7 @@ export const Main: React.FC = () => {
         <Styles.PhotoWrapper>
           <Styles.PhotoStyled src={mainPhotoSmall} alt="myPhoto" />
         </Styles.PhotoWrapper>
-      </Styles.Main>
-    </Container>
+      </Container>
+    </Styles.Main>
   );
 };

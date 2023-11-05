@@ -3,8 +3,7 @@ import { Container } from "../../components/Container_Styles";
 import { myFont } from "../../styles/Common";
 
 const Header = styled.header`
-  min-height: 70px; 
-  max-height: 10vh;
+  min-height: 7vh; 
   display: flex;
   /* backdrop-filter: brightness(50%); */
 

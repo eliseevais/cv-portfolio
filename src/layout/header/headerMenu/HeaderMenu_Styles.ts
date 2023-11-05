@@ -6,8 +6,8 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   height: 20px;
   z-index: 9999;
 
-  position: fixed;
-  top: 40px;
+  position: absolute;
+  top: -24px;
   right: calc(100% - 95%);
 
   span {
@@ -95,6 +95,7 @@ const MenuDesktop = styled.nav`
 
 const MenuMobile = styled.nav`
   display: none;
+  position: relative;
 
   @media ${myTheme.media.tablet} {
     display: block;
