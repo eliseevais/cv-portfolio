@@ -6,6 +6,7 @@ import { SectionTitle } from "../../../components/SectionTitle_Styles";
 
 const About = styled.section`
   background-color: ${myTheme.colors.backgroundB};
+  position: relative;
 
   ${Container} {
     /* outline: 1px solid ${myTheme.colors.accentB}; */

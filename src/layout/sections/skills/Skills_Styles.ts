@@ -7,6 +7,7 @@ const Skills = styled.section`
   display: flex;
   flex-direction: column;
   padding: 120px 14px 0;
+  position: relative;
 
   ${SectionTitle} {
     position: relative;

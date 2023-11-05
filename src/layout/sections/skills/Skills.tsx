@@ -16,8 +16,8 @@ const skillsData = [
 
 export const Skills: React.FC = () => {
   return (
-    <Container>
-      <Styles.Skills>
+    <Styles.Skills>
+        <Container>
         <SectionTitle>My skills</SectionTitle>
         <FlexWrapper justify="space-between" align="center" wrap="wrap">
           {skillsData.map((skill, index) => {
@@ -26,7 +26,7 @@ export const Skills: React.FC = () => {
             );
           })}
         </FlexWrapper>
-      </Styles.Skills>
     </Container>
+      </Styles.Skills>
   );
 };

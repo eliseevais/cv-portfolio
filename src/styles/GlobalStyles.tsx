@@ -117,11 +117,11 @@ export const GlobalStyles = createGlobalStyle`
     ${myFont({
       weight: 300,
       lineHeight: 1.5,
-      Fmax: 26,
-      Fmin: 18,
+      Fmax: 20,
+      Fmin: 14,
     })}
 
-    letter-spacing: 10px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
   }
 

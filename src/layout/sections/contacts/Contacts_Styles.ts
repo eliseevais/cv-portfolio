@@ -5,6 +5,7 @@ import { Button } from "../../../components/Button_Styles";
 
 const Contacts = styled.section`
   padding: 100px 14px 120px;
+  position: relative;
 
   ${SectionTitle} {
     margin-bottom: 40px;

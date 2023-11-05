@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
     <>
       <Styles.Header>
         <Container>
-          <FlexWrapper justify="space-between" align="end">
+          <FlexWrapper justify="space-between" align="flex-end">
             <Styles.LogoStyled>Irina Eliseeva</Styles.LogoStyled>
             <MenuDesktop menuItems={items} />
             {/* {width >= breakpoint} {<MenuDesktop menuItems={items} />} */}

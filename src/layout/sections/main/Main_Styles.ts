@@ -2,14 +2,19 @@ import styled from "styled-components";
 import { myTheme } from "../../../styles/Theme.styled";
 import { FlexWrapper } from "../../../components/FlexWrapper_Styles";
 import { Button } from "../../../components/Button_Styles";
+import { myFont } from "../../../styles/Common";
 
 const Main = styled.section`
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   padding: 60px 14px;
-  position: relative;
+  /* position: relative; */
+
+  p {
+    display: none;
+  }
 
   ${Button} {
     margin-top: 34px;
@@ -26,7 +31,6 @@ const Main = styled.section`
   }
 
   @media ${myTheme.media.tablet} {
-
     ${FlexWrapper} {
       align-items: center;
     }
@@ -40,7 +44,9 @@ const Main = styled.section`
   }
 `;
 
-const PhotoWrapper = styled.div``;
+const PhotoWrapper = styled.div`
+  position: relative;
+`;
 
 const PhotoStyled = styled.img`
   max-width: 560px;
@@ -49,9 +55,9 @@ const PhotoStyled = styled.img`
   object-fit: cover;
   align-self: flex-start;
   aspect-ratio: 3/4;
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  right: calc(5%);
+  right: calc(5%); */
 
   @media ${myTheme.media.moreThenTwoK} {
     margin: auto;
@@ -63,8 +69,8 @@ const PhotoStyled = styled.img`
 
   @media ${myTheme.media.bigTablet} {
     margin: 0 auto;
-    width: 440px;
-    height: 620px;
+    width: 400px;
+    height: 570px;
     top: 0;
     left: 0;
     bottom: 0;
@@ -72,8 +78,6 @@ const PhotoStyled = styled.img`
   }
 
   @media ${myTheme.media.tablet} {
-    width: 440px;
-    height: 620px;
     top: 0;
     left: 0;
     bottom: 0;
@@ -90,8 +94,21 @@ const PhotoStyled = styled.img`
   }
 `;
 
+const TitleP = styled.div`
+  ${myFont({
+    weight: 300,
+    lineHeight: 1.5,
+    Fmax: 26,
+    Fmin: 18,
+  })}
+
+  letter-spacing: 10px;
+  text-transform: uppercase;
+`;
+
 export const Styles = {
   Main,
   PhotoWrapper,
   PhotoStyled,
+  TitleP,
 };

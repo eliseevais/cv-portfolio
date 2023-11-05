@@ -30,15 +30,15 @@ const worksData = [
 
 export const Works: React.FC = () => {
   return (
-    <Container>
-      <Styles.Works>
+    <Styles.Works>
+      <Container>
         <SectionTitle>My work experience</SectionTitle>
         <FlexWrapper justify="space-between" wrap="wrap">
           {worksData.map((work, index) => {
             return <Work title={work.title} src={work.src} key={index} />;
           })}
         </FlexWrapper>
-      </Styles.Works>
-    </Container>
+      </Container>
+    </Styles.Works>
   );
 };

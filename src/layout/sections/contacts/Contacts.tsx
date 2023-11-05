@@ -7,19 +7,23 @@ import { Styles } from "./Contacts_Styles";
 
 export const Contacts: React.FC = () => {
   return (
-    <Container>
-      <Styles.Contacts>
-        <FlexWrapper direction="column" justify="center" align="center" >
+    <Styles.Contacts>
+      <Container>
+        <FlexWrapper direction="column" justify="center" align="center">
           <SectionTitle>Interested in my work </SectionTitle>
           <Styles.Form>
             <Styles.Field name="your name" placeholder="name" />
             <Styles.Field name="e-mail" placeholder="e-mail" />
             <Styles.Field name="subject" placeholder="subject" />
-            <Styles.Field name="message" as={"textarea"} placeholder="message" />
+            <Styles.Field
+              name="message"
+              as={"textarea"}
+              placeholder="message"
+            />
             <Button type={"submit"}>Send</Button>
           </Styles.Form>
         </FlexWrapper>
-      </Styles.Contacts>
-    </Container>
+      </Container>
+    </Styles.Contacts>
   );
 };

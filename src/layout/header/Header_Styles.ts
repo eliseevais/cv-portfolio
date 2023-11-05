@@ -4,9 +4,11 @@ import { myFont } from "../../styles/Common";
 
 const Header = styled.header`
   min-height: 70px; 
+  max-height: 10vh;
   display: flex;
+  /* backdrop-filter: brightness(50%); */
 
-  position: fixed;
+  /* position: fixed; */
   z-index: 99;
 
   top: 0;
@@ -14,7 +16,7 @@ const Header = styled.header`
   right: 0;
 
   ${Container} {
-    backdrop-filter: brightness(50%);
+    
     padding: 0 14px;
   }
 `;
@@ -23,7 +25,7 @@ const LogoStyled = styled.div`
   ${myFont({
     family: '"Alex Brush", "cursive"',
     weight: 400,
-    lineHeight: 1.5,
+    lineHeight: 0.8,
     Fmax: 32,
     Fmin: 14,
   })}

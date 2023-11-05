@@ -1,22 +1,33 @@
 import React from "react";
-import { FlexWrapper } from "../../../components/FlexWrapper_Styles";
+import Typewriter from "typewriter-effect";
 import { Button } from "../../../components/Button_Styles";
-import mainPhotoSmall from "../../../assets/img/mainPhotoSmallVertical.jpg";
 import { Container } from "../../../components/Container_Styles";
+import { FlexWrapper } from "../../../components/FlexWrapper_Styles";
 import { Styles } from "./Main_Styles";
+import mainPhotoSmall from "../../../assets/img/mainPhotoSmallVertical.jpg";
 
 export const Main: React.FC = () => {
   return (
     <Container>
       <Styles.Main>
         <FlexWrapper direction="column" align="flex-start" justify="center">
-          <span>welcome</span>
+          <Styles.TitleP>welcome</Styles.TitleP>
           <h3>
             I'm Irina <br /> Eliseeva
           </h3>
-          <h1>Front-end web developer</h1>
+          <h1>
+            <p>Front-end web developer</p>
+            <Typewriter
+              options={{
+                strings: ["Front-end web developer"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </h1>
           <Button>Download CV</Button>
         </FlexWrapper>
+
         <Styles.PhotoWrapper>
           <Styles.PhotoStyled src={mainPhotoSmall} alt="myPhoto" />
         </Styles.PhotoWrapper>
