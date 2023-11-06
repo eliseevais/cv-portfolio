@@ -1,15 +1,34 @@
 import React from "react";
 import { Styles } from "../HeaderMenu_Styles";
 
-export const Menu: React.FC<{ menuItems: Array<string> }> = (props: {
-  menuItems: Array<string>;
-}) => {
+const itemsMenu = [
+  { title: "Home", href: "home" },
+  { title: "About", href: "about" },
+  { title: "Skills", href: "skills" },
+  { title: "Portfolio", href: "works" },
+  { title: "Contact", href: "contact" },
+];
+
+
+type MenuProps = {
+  onMenuItemClick?: () => void
+}
+
+export const Menu: React.FC<MenuProps> = ({onMenuItemClick}) => {
   return (
     <ul>
-      {props.menuItems.map((item, index) => {
+      {itemsMenu.map((item, index) => {
         return (
           <Styles.MenuItem key={index}>
-            <Styles.Link href="#">{item}</Styles.Link>
+            <Styles.NavLink 
+                activeClass="active" 
+                to={item.href} 
+                spy={true}
+                smooth={true}
+                onClick={onMenuItemClick}
+                >
+              {item.title}
+            </Styles.NavLink>
           </Styles.MenuItem>
         );
       })}

@@ -7,12 +7,11 @@ import { Container } from "../../../components/Container_Styles";
 
 const Main = styled.section`
   ${Container} {
-    min-height: 93vh;
+    min-height: 100vh;
     display: flex;
     justify-content: space-between;
     padding: 0 14px;
-    align-items: center;
-    /* position: relative; */
+    align-items: flex-start;
   }
 
   p {
@@ -27,13 +26,19 @@ const Main = styled.section`
     margin-top: 34px;
   }
 
+  ${FlexWrapper} {
+    align-self: center;
+  }
+
+  @media ${myTheme.media.moreThenTwoK} {
+    align-items: center;
+  }
+
   @media ${myTheme.media.tablet} {
-  
     ${Container} {
       flex-direction: column-reverse;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
-      padding-top: 0;
     }
 
     ${FlexWrapper} {
@@ -44,13 +49,18 @@ const Main = styled.section`
 
   @media ${myTheme.media.mobile} {
     ${Container} {
-      padding: 0 14px 80px;
+      justify-content: space-around;
+      padding: 0 14px 40px;
     }
   }
 `;
 
 const PhotoWrapper = styled.div`
   position: relative;
+
+  @media ${myTheme.media.moreThenTwoK} {
+    align-self: center;
+  }
 `;
 
 const PhotoStyled = styled.img`
@@ -60,9 +70,6 @@ const PhotoStyled = styled.img`
   object-fit: cover;
   align-self: flex-start;
   aspect-ratio: 3/4;
-  /* position: absolute;
-  top: 0;
-  right: calc(5%); */
 
   @media ${myTheme.media.bigTablet} {
     width: 400px;
@@ -73,8 +80,8 @@ const PhotoStyled = styled.img`
   }
 
   @media ${myTheme.media.mobile} {
-    width: 230px;
-    height: 360px;
+    width: 310px;
+    height: 440px;
   }
 `;
 
@@ -90,7 +97,7 @@ const TitleP = styled.div`
   text-transform: uppercase;
 
   @media ${myTheme.media.tablet} {
-    margin-top: 34px;
+    margin-top: 12px;
   }
 `;
 

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { myTheme } from "../../../styles/Theme.styled";
+import { myTheme } from "../../styles/Theme.styled";
 
 const IconWrapperSkills = styled.svg`
   @media ${myTheme.media.tablet} {

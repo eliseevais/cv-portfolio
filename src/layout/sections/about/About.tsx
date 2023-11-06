@@ -7,7 +7,7 @@ import { Styles } from "./About_Styles";
 
 export const About: React.FC = () => {
   return (
-    <Styles.About>
+    <Styles.About id={"about"}>
       <Container>
         <FlexWrapper justify="space-around" align="center">
           <Styles.ImgWrapper>

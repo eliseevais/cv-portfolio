@@ -8,6 +8,7 @@ import { About } from "./layout/sections/about/About";
 import { Header } from "./layout/header/Header";
 import { Main } from "./layout/sections/main/Main";
 import { MyParticles } from "./components/myParticles/MyParticles";
+import { GoTopBtn } from "./components/goTopBtn/GotTopBtn";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Works />
       <Contacts />
       <Footer />
+      <GoTopBtn />
     </div>
   );
 }

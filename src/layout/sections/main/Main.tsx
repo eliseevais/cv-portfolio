@@ -8,7 +8,7 @@ import mainPhotoSmall from "../../../assets/img/mainPhotoSmallVertical.jpg";
 
 export const Main: React.FC = () => {
   return (
-    <Styles.Main>
+    <Styles.Main id={"home"}>
       <Container>
         <FlexWrapper direction="column" align="flex-start" justify="center">
           <Styles.TitleP>welcome</Styles.TitleP>

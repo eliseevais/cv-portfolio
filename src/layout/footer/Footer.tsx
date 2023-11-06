@@ -1,8 +1,8 @@
 import React from "react";
-import { IconFooter } from "../../components/menu/icon/Icon";
 import { FlexWrapper } from "../../components/FlexWrapper_Styles";
 import { Container } from "../../components/Container_Styles";
 import { Styles } from "./Footer_Styles";
+import { IconFooter } from "../../components/skillsIcon/Icon";
 
 const socialItemData = [
   { iconId: "telegram" },
@@ -24,8 +24,8 @@ export const Footer: React.FC = () => {
             <Styles.SocialList>
               {socialItemData.map((socialItem, index) => {
                 return (
-                  <Styles.SocialLink>
-                    <IconFooter iconId={socialItem.iconId} key={index} />
+                  <Styles.SocialLink key={index}>
+                    <IconFooter iconId={socialItem.iconId}  />
                   </Styles.SocialLink>
                 );
               })}

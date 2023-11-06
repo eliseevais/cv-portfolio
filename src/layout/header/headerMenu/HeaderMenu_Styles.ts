@@ -1,13 +1,14 @@
 import styled, { css } from "styled-components";
 import { myTheme } from "../../../styles/Theme.styled";
+import { Link } from "react-scroll";
 
 const BurgerButton = styled.button<{ isOpen: boolean }>`
   width: 20px;
   height: 20px;
   z-index: 9999;
 
-  position: absolute;
-  top: -24px;
+  position: fixed;
+  top: 40px;
   right: calc(100% - 95%);
 
   span {
@@ -64,19 +65,17 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   }
 `;
 
-const Link = styled.a`
+const NavLink = styled(Link)`
   color: ${myTheme.colors.accentB};
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 20px;
 
-  &:active {
+  &:hover, &.active {
     color: ${myTheme.colors.accentA};
   }
 
-  &:hover {
-    color: ${myTheme.colors.accentA};
-  }
+  cursor: pointer;
 `;
 
 const MenuItem = styled.li``;
@@ -105,11 +104,10 @@ const MenuMobile = styled.nav`
 const MenuMobilePopup = styled.div<{ isOpen: boolean }>`
   display: none;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   justify-content: center;
 
   background-color: ${myTheme.colors.backgroundA};
-  border: 1px solid ${myTheme.colors.accentB};
 
   position: absolute;
   top: 0;
@@ -138,7 +136,7 @@ const MenuMobilePopup = styled.div<{ isOpen: boolean }>`
 
 export const Styles = {
   BurgerButton,
-  Link,
+  NavLink,
   MenuItem,
   MenuDesktop,
   MenuMobile,

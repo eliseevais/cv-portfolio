@@ -3,11 +3,11 @@ import { Container } from "../../components/Container_Styles";
 import { myFont } from "../../styles/Common";
 
 const Header = styled.header`
-  min-height: 7vh; 
+  min-height: 70px; 
   display: flex;
-  /* backdrop-filter: brightness(50%); */
+  backdrop-filter: brightness(30%);
 
-  /* position: fixed; */
+  position: fixed;
   z-index: 99;
 
   top: 0;
@@ -28,6 +28,8 @@ const LogoStyled = styled.div`
     Fmax: 32,
     Fmin: 14,
   })}
+
+  cursor: pointer;
 `;
 
 export const Styles = {

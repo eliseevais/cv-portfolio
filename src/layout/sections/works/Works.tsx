@@ -30,7 +30,7 @@ const worksData = [
 
 export const Works: React.FC = () => {
   return (
-    <Styles.Works>
+    <Styles.Works id={"works"}>
       <Container>
         <SectionTitle>My work experience</SectionTitle>
         <FlexWrapper justify="space-between" wrap="wrap">

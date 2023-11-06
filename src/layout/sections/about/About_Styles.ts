@@ -36,6 +36,7 @@ const About = styled.section`
 
 const ImgWrapper = styled.div`
   position: relative;
+  margin: 0 10px;
 
   img {
     max-width: 470px;

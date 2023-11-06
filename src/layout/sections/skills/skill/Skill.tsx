@@ -1,6 +1,6 @@
 import React from "react";
-import { Icon } from "../../../../components/menu/icon/Icon";
 import { Styles } from "../Skills_Styles";
+import { Icon } from "../../../../components/skillsIcon/Icon";
 
 type SkillPropsType = {
   iconId: string;

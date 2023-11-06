@@ -1,6 +1,6 @@
 import React from "react";
-import sprite from "../../../assets/img/sprite.svg";
-import { myTheme } from "../../../styles/Theme.styled";
+import sprite from "../../assets/img/sprite.svg";
+import { myTheme } from "../../styles/Theme.styled";
 import { Styles } from "./Icon_Styles";
 
 type IconPropsType = {
@@ -38,9 +38,6 @@ export const IconFooter = (props: IconPropsType) => {
       height={props.height || "40px"}
       viewBox={props.viewBox || "0 0 40 40"}
       fill="currentColor"
-      x="0"
-      y="0"
-      xmlns="http://www.w3.org/2000/svg"
     >
       <use xlinkHref={`${sprite}#${props.iconId}`} />
     </Styles.IconWrapperFooter>

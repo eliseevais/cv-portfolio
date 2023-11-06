@@ -52,7 +52,7 @@ export const MyParticles = () => {
         },
         particles: {
           color: {
-            value: "#c22b2b",
+            value: "#ffffff",
           },
           links: {
             color: "#ffffff",
@@ -68,7 +68,7 @@ export const MyParticles = () => {
               default: "bounce",
             },
             random: false,
-            speed: 2,
+            speed: 1,
             straight: false,
           },
           number: {
