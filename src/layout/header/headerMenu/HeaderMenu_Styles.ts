@@ -70,8 +70,10 @@ const NavLink = styled(Link)`
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 20px;
+  transition: ${myTheme.animations.transition};
 
-  &:hover, &.active {
+  &:hover,
+  &.active {
     color: ${myTheme.colors.accentA};
   }
 
@@ -86,10 +88,6 @@ const MenuDesktop = styled.nav`
     justify-content: center;
     gap: 30px;
   }
-
-  @media ${myTheme.media.tablet} {
-    display: none;
-  }
 `;
 
 const MenuMobile = styled.nav`
@@ -102,7 +100,12 @@ const MenuMobile = styled.nav`
 `;
 
 const MenuMobilePopup = styled.div<{ isOpen: boolean }>`
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: ${myTheme.animations.transitionLong};
+
   width: 100%;
   height: 100vh;
   justify-content: center;
@@ -119,9 +122,7 @@ const MenuMobilePopup = styled.div<{ isOpen: boolean }>`
   ${(props) =>
     props.isOpen &&
     css<{ isOpen: boolean }>`
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      transform: translateY(0);
     `}
 
   ul {

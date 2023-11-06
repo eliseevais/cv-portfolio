@@ -38,10 +38,11 @@ const SocialItem = styled.div`
 const SocialLink = styled.a`
   color: ${myTheme.colors.accentA};
   cursor: pointer;
+  transition: ${myTheme.animations.transition};
 
   &:hover {
     color: ${myTheme.colors.accentB};
-    transform: translateY(-2px);
+    scale: calc(1.01);
   }
 `;
 

@@ -43,11 +43,11 @@ const Work = styled.div`
   position: relative;
   flex-grow: 1;
   aspect-ratio: 4/3;
-
+ 
   &:hover {
     ${ImgStyled} {
       filter: brightness(40%);
-      transition: 0.5s;
+      transition: ${myTheme.animations.transition};
     }
   }
 

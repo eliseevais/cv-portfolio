@@ -5,7 +5,7 @@ export const myTheme = {
     accentA: "#ffffff",
     accentB: "#989898",
     brightA: "#15B9B9",
-    brightB: "#3C1DFF"
+    brightB: "#3C1DFF",
   },
 
   media: {
@@ -14,5 +14,10 @@ export const myTheme = {
     bigTablet: "screen and (max-width: 1024px)",
     tablet: "screen and (max-width: 768px)",
     mobile: "screen and (max-width: 576px)",
+  },
+
+  animations: {
+    transition: "0.2s ease-in-out",
+    transitionLong: "0.4s ease-in-out",
   },
 };

@@ -11,12 +11,11 @@ export const Button = styled.button`
     ${myTheme.colors.brightB}
   );
   color: ${myTheme.colors.accentA};
-  transition: ease 0.2s;
 
   letter-spacing: 5%;
   cursor: pointer;
   position: relative;
-  transition: 0.2s;
+  transition: ${myTheme.animations.transition};
 
   &::before {
     content: "";
@@ -31,7 +30,7 @@ export const Button = styled.button`
   }
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
   }
 
   @media ${myTheme.media.tablet} {

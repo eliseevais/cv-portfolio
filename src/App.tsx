@@ -21,7 +21,7 @@ function App() {
       <Works />
       <Contacts />
       <Footer />
-      {/* <GoTopBtn /> */}
+      <GoTopBtn />
     </div>
   );
 }

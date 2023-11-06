@@ -3,7 +3,7 @@ import { Container } from "../../components/Container_Styles";
 import { myFont } from "../../styles/Common";
 
 const Header = styled.header`
-  min-height: 70px; 
+  min-height: 70px;
   display: flex;
 
   position: fixed;
@@ -14,7 +14,6 @@ const Header = styled.header`
   right: 0;
 
   ${Container} {
-    
     padding: 0 14px;
   }
 `;
@@ -22,13 +21,13 @@ const Header = styled.header`
 const HeaderBackground = styled.div`
   width: 100%;
   min-height: 70px;
+  backdrop-filter: brightness(40%);
 
   position: fixed;
   left: 0%;
   z-index: -1;
+`;
 
-  backdrop-filter: brightness(50%);
-`
 const LogoStyled = styled.div`
   ${myFont({
     family: '"Alex Brush", "cursive"',
