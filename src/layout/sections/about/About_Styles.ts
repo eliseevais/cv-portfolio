@@ -6,7 +6,6 @@ import { SectionTitle } from "../../../components/SectionTitle_Styles";
 
 const About = styled.section`
   background-color: ${myTheme.colors.backgroundB};
-  position: relative;
 
   ${Container} {
     padding: 120px 14px;
@@ -14,6 +13,7 @@ const About = styled.section`
 
   p {
     max-width: 660px;
+    hyphens: none;
   }
 
   @media ${myTheme.media.bigTablet} {

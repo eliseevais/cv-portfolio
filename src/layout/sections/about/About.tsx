@@ -16,14 +16,12 @@ export const About: React.FC = () => {
           <FlexWrapper direction="column" justify="center">
             <SectionTitle>About</SectionTitle>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
-              voluptatum explicabo mollitia corrupti eum fuga vel maiores
-              blanditiis voluptatem, numquam amet laborum quidem eius soluta
-              nemo unde nam. Adipisci, magni. Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Dolores voluptatum explicabo
-              mollitia corrupti eum fuga vel maiores blanditiis voluptatem,
-              numquam amet laborum quidem eius soluta nemo unde nam. Adipisci,
-              magni.
+              Welcome to my portfolio, dear guest. My name is Irina Eliseeva and
+              I studied at one of the best it&#8209;schools &#8209; "It&#8209;incubator". I
+              got experience from professionals, and Now I am a react
+              frontend&#8209;developer. You can check the results of my work in the
+              section below. I believe, that we can enjoy our work cooperation
+              and get quality result.
             </p>
           </FlexWrapper>
         </FlexWrapper>

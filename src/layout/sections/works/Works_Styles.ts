@@ -75,14 +75,14 @@ const Works = styled.section`
     position: relative;
     width: fit-content;
 
-    ::before {
+    /* ::before {
       content: "";
       border-bottom: 1px solid ${myTheme.colors.accentA};
       position: absolute;
       height: 2px;
       width: 70%;
       top: -10px;
-    }
+    } */
   }
 
   @media ${myTheme.media.largeTablet} {

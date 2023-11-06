@@ -8,7 +8,7 @@ const Contacts = styled.section`
   position: relative;
 
   ${SectionTitle} {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
   }
 
   textarea {

@@ -6,6 +6,8 @@ import { myFont } from "../../../styles/Common";
 import { Container } from "../../../components/Container_Styles";
 
 const Main = styled.section`
+  position: relative;
+  
   ${Container} {
     min-height: 100vh;
     display: flex;
@@ -34,7 +36,7 @@ const Main = styled.section`
     align-items: center;
   }
 
-  @media ${myTheme.media.tablet} {
+  @media ${myTheme.media.bigTablet} {
     ${Container} {
       flex-direction: column-reverse;
       justify-content: space-around;

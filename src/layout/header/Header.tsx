@@ -5,7 +5,6 @@ import { Styles } from "./Header_Styles";
 import { MenuDesktop } from "./headerMenu/menuDesktop/MenuDesktop";
 import { MenuMobile } from "./headerMenu/menuMobile/MenuMobile";
 import { Logo } from "./Logo";
-import { animateScroll } from "react-scroll";
 
 export const Header: React.FC = () => {
   const [width, setWidth] = React.useState(window.innerWidth);

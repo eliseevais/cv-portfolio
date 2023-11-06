@@ -91,7 +91,7 @@ export const GlobalStyles = createGlobalStyle`
       weight: 400,
       lineHeight: 1.5,
       Fmax: 14,
-      Fmin: 8,
+      Fmin: 10,
     })}
 
     letter-spacing: 1.5px;
