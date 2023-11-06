@@ -5,7 +5,6 @@ import { myFont } from "../../styles/Common";
 const Header = styled.header`
   min-height: 70px; 
   display: flex;
-  backdrop-filter: brightness(30%);
 
   position: fixed;
   z-index: 99;
@@ -20,6 +19,16 @@ const Header = styled.header`
   }
 `;
 
+const HeaderBackground = styled.div`
+  width: 100%;
+  min-height: 70px;
+
+  position: fixed;
+  left: 0%;
+  z-index: -1;
+
+  backdrop-filter: brightness(50%);
+`
 const LogoStyled = styled.div`
   ${myFont({
     family: '"Alex Brush", "cursive"',
@@ -34,5 +43,6 @@ const LogoStyled = styled.div`
 
 export const Styles = {
   Header,
+  HeaderBackground,
   LogoStyled,
 };

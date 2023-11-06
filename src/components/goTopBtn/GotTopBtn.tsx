@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
 import { IconFooter } from "../skillsIcon/Icon";
-import { myTheme } from "../../styles/Theme.styled";
 import { animateScroll } from "react-scroll";
+import { Styles } from "./GoTopBtn_Styles";
 
 export const GoTopBtn = () => {
   const [showBtn, setShowBtn] = useState(false);
@@ -19,18 +18,11 @@ export const GoTopBtn = () => {
   return (
     <>
       {showBtn && (
-        <GoTopStyled onClick={() => {animateScroll.scrollToTop()}}>
+        <Styles.GoTop onClick={() => {animateScroll.scrollToTop()}}>
           <IconFooter iconId={"goTop"} />
-        </GoTopStyled>
+        </Styles.GoTop>
       )}
     </>
   );
 };
 
-const GoTopStyled = styled.button`
-  color: ${myTheme.colors.accentB};
-  cursor: pointer;
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-`;
