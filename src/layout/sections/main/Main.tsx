@@ -25,7 +25,7 @@ export const Main: React.FC = () => {
               }}
             />
           </h1>
-          <Button>Download CV</Button>
+          {/*<Button>Download CV</Button>*/}
         </FlexWrapper>
 
         <Styles.PhotoWrapper>

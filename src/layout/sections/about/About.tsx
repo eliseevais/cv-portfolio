@@ -16,12 +16,7 @@ export const About: React.FC = () => {
           <FlexWrapper direction="column" justify="center">
             <SectionTitle>About</SectionTitle>
             <p>
-              Welcome to my portfolio, dear guest. My name is Irina Eliseeva and
-              I studied at one of the best it&#8209;schools &#8209; "It&#8209;incubator". I
-              got experience from professionals, and Now I am a react
-              frontend&#8209;developer. You can check the results of my work in the
-              section below. I believe, that we can enjoy our work cooperation
-              and get quality result.
+              Welcome to my portfolio page! My name is Irina Eliseeva and I am a beginner React Frontend developer. You can get acquainted with my projects In the "Portfolio" section. There are: Todolist with Redux Toolkit, Calculator with Local storage and an example of using Normalized state. For these applications I used Material UI library, CSS and styled component. I will be glad to cooperate with you!
             </p>
           </FlexWrapper>
         </FlexWrapper>

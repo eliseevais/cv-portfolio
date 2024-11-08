@@ -10,8 +10,10 @@ const skillsData = [
   { iconId: "css", title: "CSS" },
   { iconId: "javaScript", title: "JS" },
   { iconId: "typeScript", title: "TS" },
-  { iconId: "react", title: "React" },
   { iconId: "git", title: "git" },
+  { iconId: "react", title: "React" },
+  { iconId: "react", title: "RTK" },
+  { iconId: "react", title: "Saga" },
 ];
 
 export const Skills: React.FC = () => {

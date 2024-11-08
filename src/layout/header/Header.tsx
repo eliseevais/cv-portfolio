@@ -6,7 +6,7 @@ import { MenuDesktop } from "./headerMenu/menuDesktop/MenuDesktop";
 import { MenuMobile } from "./headerMenu/menuMobile/MenuMobile";
 import { Logo } from "./Logo";
 
-export const Header: React.FC = () => {
+export const  Header: React.FC = () => {
   const [width, setWidth] = React.useState(window.innerWidth);
   const breakpoint = 768;
 

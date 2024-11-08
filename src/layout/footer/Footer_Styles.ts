@@ -26,7 +26,8 @@ const Footer = styled.section`
 const MediaBlock = styled.div`
   small {
     margin-bottom: 0.5em;
-  }
+  };
+  width: 250px;
 `;
 
 const SocialItem = styled.div`

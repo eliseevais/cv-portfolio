@@ -4,6 +4,7 @@ import { Styles } from "../Works_Styles";
 type WorkPropsType = {
   title: string;
   src: string;
+  link: any
 };
 
 export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
@@ -13,7 +14,7 @@ export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
         <Styles.ImgStyled src={props.src} alt="photo" />
       </Styles.ImgWrapper>
       <Styles.TitleProject>{props.title}</Styles.TitleProject>
-      <Styles.Link href={"#"}>Visit</Styles.Link>
+      <Styles.Link href={props.link} target="_blank">Visit</Styles.Link>
     </Styles.Work>
   );
 };
