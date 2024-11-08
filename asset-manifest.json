@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/2-portfolio/static/css/main.f4867601.css",
-    "main.js": "/2-portfolio/static/js/main.09099f86.js",
+    "main.js": "/2-portfolio/static/js/main.c5ec53fe.js",
     "static/js/787.25eaef86.chunk.js": "/2-portfolio/static/js/787.25eaef86.chunk.js",
     "static/media/FiraCode-Medium.eot": "/2-portfolio/static/media/FiraCode-Medium.fbea5d0dcd4b8bdd6918.eot",
     "static/media/FiraCode-Regular.eot": "/2-portfolio/static/media/FiraCode-Regular.e9056fd0f034ad4f24dd.eot",
@@ -16,6 +16,7 @@
     "static/media/Poppins-Light.ttf": "/2-portfolio/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
     "static/media/Poppins-Regular.ttf": "/2-portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-SemiBold.ttf": "/2-portfolio/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
+    "static/media/calculator.jpg": "/2-portfolio/static/media/calculator.2da1520b063f320bf065.jpg",
     "static/media/AlexBrush-Regular.eot": "/2-portfolio/static/media/AlexBrush-Regular.d31b193af71ddb83471a.eot",
     "static/media/AlexBrush-Regular.ttf": "/2-portfolio/static/media/AlexBrush-Regular.2931994a26f7d46dab66.ttf",
     "static/media/AboutPhotoVertical.jpg": "/2-portfolio/static/media/AboutPhotoVertical.33741d445f3de5133440.jpg",
@@ -27,17 +28,16 @@
     "static/media/AlexBrush-Regular.woff2": "/2-portfolio/static/media/AlexBrush-Regular.84865e4efb8fa98d59a5.woff2",
     "static/media/Poppins-SemiBold.woff2": "/2-portfolio/static/media/Poppins-SemiBold.3c3f3613b59d581739fc.woff2",
     "static/media/Poppins-Light.woff2": "/2-portfolio/static/media/Poppins-Light.9bec05ab7f83d34eb905.woff2",
-    "static/media/socialNetwork.jpg": "/2-portfolio/static/media/socialNetwork.0a8c6c3f49d7777f5e1f.jpg",
     "static/media/toDoList.jpg": "/2-portfolio/static/media/toDoList.372628a42a3a97465365.jpg",
     "static/media/Cedarville-Cursive.woff2": "/2-portfolio/static/media/Cedarville-Cursive.fa7757ac549163221081.woff2",
     "static/media/sprite.svg": "/2-portfolio/static/media/sprite.cdab0bbaa43e910c307ee3150d6e6b86.svg",
     "index.html": "/2-portfolio/index.html",
     "main.f4867601.css.map": "/2-portfolio/static/css/main.f4867601.css.map",
-    "main.09099f86.js.map": "/2-portfolio/static/js/main.09099f86.js.map",
+    "main.c5ec53fe.js.map": "/2-portfolio/static/js/main.c5ec53fe.js.map",
     "787.25eaef86.chunk.js.map": "/2-portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4867601.css",
-    "static/js/main.09099f86.js"
+    "static/js/main.c5ec53fe.js"
   ]
 }
