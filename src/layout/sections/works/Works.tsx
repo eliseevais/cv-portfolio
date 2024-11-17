@@ -26,8 +26,9 @@ const worksData = [
     link: 'https://eliseevais.github.io/22-normalized-state/'
   },
   {
-    title: "Here could be your idea",
+    title: "Back for chat on Websocket",
     src: workExample3,
+    link: 'https://github.com/eliseevais/23-1-chat-websocket-back',
   },
 ];
 
