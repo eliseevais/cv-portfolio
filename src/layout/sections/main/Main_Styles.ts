@@ -7,12 +7,12 @@ import { Container } from "../../../components/Container_Styles";
 
 const Main = styled.section`
   position: relative;
-  
+
   ${Container} {
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
-    padding: 0 14px;
+    padding: 0 16px; 
     align-items: flex-start;
   }
 
@@ -21,11 +21,11 @@ const Main = styled.section`
   }
 
   span {
-    margin-top: 30px;
+    margin-top: 32px; 
   }
 
   ${Button} {
-    margin-top: 34px;
+    margin-top: 36px; 
   }
 
   ${FlexWrapper} {
@@ -52,7 +52,7 @@ const Main = styled.section`
   @media ${myTheme.media.mobile} {
     ${Container} {
       justify-content: space-around;
-      padding: 0 14px 40px;
+      padding: 0 16px 40px; 
     }
   }
 `;
@@ -66,24 +66,24 @@ const PhotoWrapper = styled.div`
 `;
 
 const PhotoStyled = styled.img`
-  max-width: 560px;
+  max-width: 560px; 
   width: 100%;
-  height: 810px;
+  height: 808px; 
   object-fit: cover;
   align-self: flex-start;
-  aspect-ratio: 3/4;
+  aspect-ratio: 3 / 4;
 
   @media ${myTheme.media.bigTablet} {
     width: 400px;
-    height: 570px;
+    height: 568px; 
   }
 
   @media ${myTheme.media.tablet} {
   }
 
   @media ${myTheme.media.mobile} {
-    width: 310px;
-    height: 440px;
+    width: 312px; 
+    height: 440px; 
   }
 `;
 
@@ -91,11 +91,11 @@ const TitleP = styled.div`
   ${myFont({
     weight: 300,
     lineHeight: 1.5,
-    Fmax: 26,
-    Fmin: 18,
+    Fmax: 28, 
+    Fmin: 20,
   })}
 
-  letter-spacing: 10px;
+  letter-spacing: 12px; 
   text-transform: uppercase;
 
   @media ${myTheme.media.tablet} {

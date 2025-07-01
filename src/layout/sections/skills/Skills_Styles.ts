@@ -1,37 +1,50 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { SectionTitle } from "../../../components/SectionTitle_Styles";
 import { myTheme } from "../../../styles/Theme.styled";
 import { FlexWrapper } from "../../../components/FlexWrapper_Styles";
 
+const scroll = keyframes`
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+`;
+
 const Skills = styled.section`
   display: flex;
   flex-direction: column;
-  padding: 120px 14px 0;
+  padding: 120px 16px 0;
   position: relative;
 
   ${SectionTitle} {
     position: relative;
     width: fit-content;
+    margin-bottom: 32px;
 
-    /* ::before {
+    &::before {
       content: "";
       border-bottom: 1px solid ${myTheme.colors.accentA};
       position: absolute;
       height: 2px;
       width: 70%;
-      top: -10px;
-    } */
+      top: -8px;
+    }
+  }
+
+  ${FlexWrapper} {
+    justify-content: space-between;
   }
 
   @media ${myTheme.media.largeTablet} {
+    padding-top: 96px;
+
     ${SectionTitle} {
       margin: 0 auto 32px;
-    }
-    ${SectionTitle} {
-      @media ${myTheme.media.largeTablet} {
-        &::before {
-          display: none;
-        }
+
+      &::before {
+        display: none;
       }
     }
   }
@@ -41,31 +54,24 @@ const Skills = styled.section`
 
     ${SectionTitle} {
       margin-bottom: 20px;
+
+      &::before {
+        display: block;
+        top: -4px;
+      }
     }
 
     ${FlexWrapper} {
       justify-content: space-evenly;
-    }
-
-    ${SectionTitle} {
-      @media ${myTheme.media.tablet} {
-        &::before {
-          content: "";
-          top: -4px;
-        }
-      }
     }
   }
 
   @media ${myTheme.media.mobile} {
     ${SectionTitle} {
       margin: 0 0 32px;
-    }
-    ${SectionTitle} {
-      @media ${myTheme.media.largeTablet} {
-        &::before {
-          display: block;
-        }
+
+      &::before {
+        display: block;
       }
     }
   }
@@ -85,8 +91,34 @@ const SkillTitle = styled.h4`
   }
 `;
 
+const MarqueeWrapper = styled.div`
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 40px;
+
+  @media ${myTheme.media.mobile} {
+    margin-top: 24px;
+  }
+`;
+
+const MarqueeContent = styled.div`
+  display: inline-flex;
+  animation: ${scroll} 180s linear infinite;
+`;
+
+const SkillItem = styled.span`
+  font-size: 24px;
+  color: ${myTheme.colors.accentA};
+  padding: 0 24px;
+  white-space: nowrap;
+`;
+
 export const Styles = {
   Skills,
   Skill,
   SkillTitle,
+  MarqueeWrapper,
+  MarqueeContent,
+  SkillItem,
 };

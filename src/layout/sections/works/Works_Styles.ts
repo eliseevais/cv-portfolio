@@ -3,47 +3,69 @@ import { SectionTitle } from "../../../components/SectionTitle_Styles";
 import { myTheme } from "../../../styles/Theme.styled";
 import { FlexWrapper } from "../../../components/FlexWrapper_Styles";
 
-const ImgWrapper = styled.div``;
+const ImgWrapper = styled.div`
+  position: relative;
+`;
 
 const ImgStyled = styled.img`
   max-width: 600px;
   width: 100%;
   object-fit: cover;
-  aspect-ratio: 4/3;
-`;
-
-const Link = styled.a`
-  cursor: pointer;
-  letter-spacing: 3px;
-  position: absolute;
-  left: 65px;
-  bottom: 46px;
-
-  @media ${myTheme.media.tablet} {
-    left: 42px;
-    bottom: 28px;
-  }
+  aspect-ratio: 4 / 3;
 `;
 
 const TitleProject = styled.h4`
   position: absolute;
-  left: 65px;
-  bottom: 66px;
+  left: 64px;
+  bottom: 80px; 
 
   @media ${myTheme.media.tablet} {
-    left: 42px;
-    bottom: 42px;
+    left: 40px;
+    bottom: 88px; 
+  }
+
+  @media ${myTheme.media.mobile} {
+    bottom: 80px; 
+    left: 24px;
   }
 `;
 
+const LinksWrapper = styled.div`
+  position: absolute;
+  bottom: 48px;
+  left: 64px;
+  display: flex;
+  gap: 40px; 
+
+  @media ${myTheme.media.tablet} {
+    bottom: 32px;
+    left: 40px;
+    flex-direction: column;
+    gap: 8px; 
+    padding-top: 8px; 
+  }
+
+  @media ${myTheme.media.mobile} {
+    bottom: 24px;
+    left: 24px;
+    gap: 8px; 
+    padding-top: 8px; 
+  }
+`;
+
+const Link = styled.a`
+  cursor: pointer;
+  letter-spacing: 4px;
+`;
+
 const Work = styled.div`
-  margin: 10px;
+  margin: 8px;
   max-width: 600px;
   width: 100%;
   position: relative;
   flex-grow: 1;
-  aspect-ratio: 4/3;
- 
+  aspect-ratio: 4 / 3;
+
   &:hover {
     ${ImgStyled} {
       filter: brightness(40%);
@@ -52,20 +74,20 @@ const Work = styled.div`
   }
 
   @media ${myTheme.media.largeTablet} {
-    max-width: 450px;
-    width: 360px;
+    max-width: 448px;
+    width: 352px;
     margin-bottom: 8px;
-    gap: 10%;
+    gap: 40px;
   }
 
   @media ${myTheme.media.mobile} {
     max-width: 360px;
-    width: 300px;
+    width: 304px;
   }
 `;
 
 const Works = styled.section`
-  padding: 120px 14px 0;
+  padding: 120px 16px 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -74,19 +96,10 @@ const Works = styled.section`
   ${SectionTitle} {
     position: relative;
     width: fit-content;
-
-    /* ::before {
-      content: "";
-      border-bottom: 1px solid ${myTheme.colors.accentA};
-      position: absolute;
-      height: 2px;
-      width: 70%;
-      top: -10px;
-    } */
   }
 
   @media ${myTheme.media.largeTablet} {
-    padding-top: 70px;
+    padding-top: 72px;
     align-items: center;
 
     ${FlexWrapper} {
@@ -109,8 +122,9 @@ const Works = styled.section`
 export const Styles = {
   ImgWrapper,
   ImgStyled,
-  Link,
   TitleProject,
+  LinksWrapper,
+  Link,
   Work,
   Works,
 };

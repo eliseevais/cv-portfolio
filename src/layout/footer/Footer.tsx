@@ -10,8 +10,8 @@ export const Footer: React.FC = () => {
       <Container>
         <FlexWrapper justify="space-between">
           <Styles.ContactsFooter>
-            <small>irina.eliseeva1991@gmail.com</small>
-            <small>Web designer and front-end developer</small>
+            <small>i.e.work@yandex.ru</small>
+            <small>Front-end developer</small>
           </Styles.ContactsFooter>
           <Styles.MediaBlock>
             <small>+7 (926) 061-30-04</small>
@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
             <small>Phone number and telegram</small>
           </Styles.MediaBlock>
         </FlexWrapper>
-        <Styles.Copyright>&copy; 2024, Made by Irina Eliseeva</Styles.Copyright>
+        <Styles.Copyright>&copy; 2025, Made by Irina Eliseeva</Styles.Copyright>
       </Container>
     </Styles.Footer>
   );

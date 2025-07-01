@@ -1,9 +1,9 @@
 import React from "react";
-import { Container } from "../../../components/Container_Styles";
-import aboutPhotoVertical from "./../../../assets/img/AboutPhotoVertical.jpg";
-import { FlexWrapper } from "../../../components/FlexWrapper_Styles";
-import { SectionTitle } from "../../../components/SectionTitle_Styles";
-import { Styles } from "./About_Styles";
+import {Container} from "../../../components/Container_Styles";
+import aboutPhotoVertical from "./../../../assets/img/1.jpg";
+import {FlexWrapper} from "../../../components/FlexWrapper_Styles";
+import {SectionTitle} from "../../../components/SectionTitle_Styles";
+import {Styles} from "./About_Styles";
 
 export const About: React.FC = () => {
   return (
@@ -11,13 +11,15 @@ export const About: React.FC = () => {
       <Container>
         <FlexWrapper justify="space-around" align="center">
           <Styles.ImgWrapper>
-            <img src={aboutPhotoVertical} alt="img" />
+            <img src={aboutPhotoVertical} alt="img"/>
           </Styles.ImgWrapper>
           <FlexWrapper direction="column" justify="center">
             <SectionTitle>About</SectionTitle>
             <p>
-              Welcome to my portfolio page! My name is Irina Eliseeva and I am a beginner React Frontend developer. You can get acquainted with my projects In the "Portfolio" section. There are: Todolist with Redux Toolkit, Calculator with Local storage and an example of using Normalized state. For these applications I used Material UI library, CSS and styled component. I will be glad to cooperate with you!
-            </p>
+              Frontend Developer with 1+ year of experience in building Single Page Applications (SPAs) using modern
+              technologies including TypeScript, React, Next.js and Redux.
+              Participated in team-based development processes, including code reviews, CI/CD workflows, and deploying projects to Kubernetes. Have experience leading a project as a Team Lead. In my spare time, I solve coding challenges on Codewars to improve my JavaScript and TypeScript skills.
+              I am Open to new opportunities and collaboration. </p>
           </FlexWrapper>
         </FlexWrapper>
       </Container>
