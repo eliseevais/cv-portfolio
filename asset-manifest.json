@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/2-portfolio/static/css/main.f4867601.css",
-    "main.js": "/2-portfolio/static/js/main.75a9a15e.js",
+    "main.js": "/2-portfolio/static/js/main.9bcf6487.js",
     "static/js/787.25eaef86.chunk.js": "/2-portfolio/static/js/787.25eaef86.chunk.js",
+    "static/media/Irina_Eliseeva_CV_frontend.jpg": "/2-portfolio/static/media/Irina_Eliseeva_CV_frontend.42d89262be9b6f385f18.jpg",
     "static/media/FiraCode-Medium.eot": "/2-portfolio/static/media/FiraCode-Medium.fbea5d0dcd4b8bdd6918.eot",
     "static/media/FiraCode-Regular.eot": "/2-portfolio/static/media/FiraCode-Regular.e9056fd0f034ad4f24dd.eot",
     "static/media/FiraCode-Regular.ttf": "/2-portfolio/static/media/FiraCode-Regular.dbd175e33b712ffcd71c.ttf",
@@ -31,11 +32,11 @@
     "static/media/sprite.svg": "/2-portfolio/static/media/sprite.cd97636404eaf2dd4580b33d8cd9b866.svg",
     "index.html": "/2-portfolio/index.html",
     "main.f4867601.css.map": "/2-portfolio/static/css/main.f4867601.css.map",
-    "main.75a9a15e.js.map": "/2-portfolio/static/js/main.75a9a15e.js.map",
+    "main.9bcf6487.js.map": "/2-portfolio/static/js/main.9bcf6487.js.map",
     "787.25eaef86.chunk.js.map": "/2-portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4867601.css",
-    "static/js/main.75a9a15e.js"
+    "static/js/main.9bcf6487.js"
   ]
 }
