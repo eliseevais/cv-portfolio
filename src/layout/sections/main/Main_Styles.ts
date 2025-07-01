@@ -24,8 +24,14 @@ const Main = styled.section`
     margin-top: 32px; 
   }
 
+  h1 .typewriter-wrapper {
+    display: inline-block;
+  }
+
+
   ${Button} {
-    margin-top: 36px; 
+    margin-top: 54px; 
+    margin-bottom: 36px; 
   }
 
   ${FlexWrapper} {

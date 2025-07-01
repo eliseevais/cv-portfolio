@@ -3,9 +3,9 @@ export const myTheme = {
     backgroundA: "#1f1f1f",
     backgroundB: "#2B2A2A",
     accentA: "#ffffff",
-    accentB: "#989898",
-    brightA: "#F5C5D5",
-    brightB: "#40C9A2",
+    accentB: "#666666",
+    brightA: "#F5E8C7",
+    brightB: "#6A4B7C",
   },
 
   media: {

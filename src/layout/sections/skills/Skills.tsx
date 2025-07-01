@@ -7,19 +7,20 @@ const skills = [
   "JavaScript (ES6+)",
   "TypeScript",
   "React",
-  "Next.js (SSR/ISR)",
+  "Next.js (SSR)",
   "Redux Toolkit",
+  "RTK Query",
   "React Hook Form",
   "Zod",
   "CSS",
   "MUI",
   "Radix UI",
   "Axios",
-  "WebSockets (Socket.io)",
+  "WebSocket (Socket.io)",
   "Storybook",
   "Git",
   "GitHub",
-  "CI/CD (Jenkins, Docker, Kubernetes)",
+  "CI/CD (Jenkins, Kubernetes)",
 ];
 
 export const Skills: React.FC = () => {

@@ -5,6 +5,7 @@ import { Container } from "../../../components/Container_Styles";
 import { FlexWrapper } from "../../../components/FlexWrapper_Styles";
 import { Styles } from "./Main_Styles";
 import mainPhotoSmall from "../../../assets/img/2.jpg";
+import cvPdf from "../../../assets/Irina_Eliseeva_CV_frontend.jpg";
 
 export const Main: React.FC = () => {
   return (
@@ -17,15 +18,25 @@ export const Main: React.FC = () => {
           </h3>
           <h1>
             <p>Front-end web developer</p>
-            <Typewriter
-              options={{
-                strings: ["Front-end web developer"],
-                autoStart: true,
-                loop: true,
-              }}
-            />
+            <div className="typewriter-wrapper">
+              <Typewriter
+                options={{
+                  strings: ["Front-end web developer"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </div>
           </h1>
-          {/*<Button>Download CV</Button>*/}
+          <Button
+            as="a"
+            href={cvPdf}
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download CV
+          </Button>
         </FlexWrapper>
 
         <Styles.PhotoWrapper>

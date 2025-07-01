@@ -22,15 +22,6 @@ const Skills = styled.section`
     position: relative;
     width: fit-content;
     margin-bottom: 32px;
-
-    &::before {
-      content: "";
-      border-bottom: 1px solid ${myTheme.colors.accentA};
-      position: absolute;
-      height: 2px;
-      width: 70%;
-      top: -8px;
-    }
   }
 
   ${FlexWrapper} {
@@ -42,10 +33,6 @@ const Skills = styled.section`
 
     ${SectionTitle} {
       margin: 0 auto 32px;
-
-      &::before {
-        display: none;
-      }
     }
   }
 
@@ -54,11 +41,6 @@ const Skills = styled.section`
 
     ${SectionTitle} {
       margin-bottom: 20px;
-
-      &::before {
-        display: block;
-        top: -4px;
-      }
     }
 
     ${FlexWrapper} {
@@ -69,10 +51,6 @@ const Skills = styled.section`
   @media ${myTheme.media.mobile} {
     ${SectionTitle} {
       margin: 0 0 32px;
-
-      &::before {
-        display: block;
-      }
     }
   }
 `;
@@ -112,6 +90,11 @@ const SkillItem = styled.span`
   color: ${myTheme.colors.accentA};
   padding: 0 24px;
   white-space: nowrap;
+  
+  @media ${myTheme.media.mobile} {
+    font-size: 16px;  
+    padding: 0 16px;  
+  }
 `;
 
 export const Styles = {

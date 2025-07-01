@@ -14,7 +14,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   span {
     display: block;
     width: 20px;
-    height: 2px;
+    height: 4px;
     background-color: ${myTheme.colors.accentA};
     position: absolute;
     left: 0;
@@ -30,11 +30,11 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       content: "";
       display: block;
       width: 20px;
-      height: 2px;
+      height: 4px;
       background-color: ${myTheme.colors.accentA};
       position: absolute;
       left: 0;
-      bottom: 6px;
+      bottom: 8px;
       transform: translateY(-10px);
 
       ${(props) =>
@@ -48,18 +48,18 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       content: "";
       display: block;
       width: 20px;
-      height: 2px;
+      height: 4px;
       background-color: ${myTheme.colors.accentA};
       position: absolute;
       left: 0;
-      bottom: 18px;
+      bottom: 20px;
       transform: translateY(10px);
 
       ${(props) =>
         props.isOpen &&
         css<{ isOpen: boolean }>`
           transform: rotate(45deg) translateY(0);
-          bottom: 6px;
+          bottom: 8px;
         `}
     }
   }
@@ -86,7 +86,8 @@ const MenuDesktop = styled.nav`
   ul {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 32px;
+    margin-right: 24px;
   }
 `;
 
@@ -127,11 +128,11 @@ const MenuMobilePopup = styled.div<{ isOpen: boolean }>`
 
   ul {
     display: flex;
-    gap: 30px;
+    gap: 32px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 10px;
+    padding-right: 12px;
   }
 `;
 

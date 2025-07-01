@@ -4,52 +4,51 @@ import { myTheme } from "../../styles/Theme.styled";
 const ContactsFooter = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  line-height: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  font-size: 0.95rem;
+  color: ${myTheme.colors.backgroundA};
+  line-height: 1.4;
+  margin-bottom: 12px;
+
+  small {
+    white-space: nowrap;
+  }
+
+  @media ${myTheme.media.tablet} {
+    flex-direction: column;
+    gap: 0;
+
+    small {
+      white-space: normal;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    small:last-child {
+      margin-bottom: 0;
+    }
+  }
 `;
 
 const Copyright = styled.small`
-  align-self: center;
+  width: 100%;
+  text-align: center;
+  font-size: 0.85rem;
+  color: ${myTheme.colors.accentA};
+  user-select: none;
   display: flex;
   justify-content: center;
 `;
 
-const Footer = styled.section`
-  padding: 0 14px 20px;
+const Footer = styled.footer`
+  padding: 20px 14px;
+  background-color: ${myTheme.colors.backgroundA};
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  position: relative;
-`;
-
-const MediaBlock = styled.div`
-  small {
-    margin-bottom: 0.5em;
-  };
-  width: 250px;
-`;
-
-const SocialItem = styled.div`
-  &:hover {
-    transform: translateY(-4px);
-  }
-`;
-
-const SocialLink = styled.a`
-  color: ${myTheme.colors.accentA};
-  cursor: pointer;
-  transition: ${myTheme.animations.transition};
-
-  &:hover {
-    color: ${myTheme.colors.accentB};
-    scale: calc(1.01);
-  }
-`;
-
-const SocialList = styled.div`
-  display: flex;
-  align-items: center;
   justify-content: center;
 `;
 
@@ -57,8 +56,4 @@ export const Styles = {
   ContactsFooter,
   Copyright,
   Footer,
-  MediaBlock,
-  SocialItem,
-  SocialLink,
-  SocialList,
 };
