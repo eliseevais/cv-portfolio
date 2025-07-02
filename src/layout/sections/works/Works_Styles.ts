@@ -14,42 +14,49 @@ const ImgStyled = styled.img`
   aspect-ratio: 4 / 3;
 `;
 
-const TitleProject = styled.h4`
+const InfoOverlay = styled.div`
   position: absolute;
-  left: 64px;
-  bottom: 80px; 
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
 
+  background-color: rgba(43, 42, 42, 0.4);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 16px 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  
   @media ${myTheme.media.tablet} {
-    left: 40px;
-    bottom: 88px; 
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
   }
 
   @media ${myTheme.media.mobile} {
-    bottom: 80px; 
-    left: 24px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    padding: 12px 16px;
   }
 `;
 
+const TitleProject = styled.h4`
+  margin: 0;
+`;
+
 const LinksWrapper = styled.div`
-  position: absolute;
-  bottom: 48px;
-  left: 64px;
   display: flex;
-  gap: 40px; 
+  gap: 40px;
 
   @media ${myTheme.media.tablet} {
-    bottom: 32px;
-    left: 40px;
     flex-direction: column;
-    gap: 8px; 
-    padding-top: 8px; 
+    gap: 8px;
   }
 
   @media ${myTheme.media.mobile} {
-    bottom: 24px;
-    left: 24px;
-    gap: 8px; 
-    padding-top: 8px; 
+    gap: 8px;
   }
 `;
 
@@ -69,6 +76,11 @@ const Work = styled.div`
   &:hover {
     ${ImgStyled} {
       filter: brightness(40%);
+      transition: ${myTheme.animations.transition};
+    }
+
+    ${InfoOverlay} {
+      background-color: transparent;
       transition: ${myTheme.animations.transition};
     }
   }
@@ -122,6 +134,7 @@ const Works = styled.section`
 export const Styles = {
   ImgWrapper,
   ImgStyled,
+  InfoOverlay,
   TitleProject,
   LinksWrapper,
   Link,

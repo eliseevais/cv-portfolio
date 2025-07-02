@@ -4,34 +4,45 @@ import { Styles } from "../Works_Styles";
 type WorkPropsType = {
   title: string;
   src: string;
-  codeLink: string;
-  appLink: string;
+  codeLink?: string;
+  appLink?: string;
 };
 
-export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
+export const Work: React.FC<WorkPropsType> = ({
+                                                title,
+                                                src,
+                                                codeLink,
+                                                appLink,
+                                              }) => {
   return (
     <Styles.Work>
       <Styles.ImgWrapper>
-        <Styles.ImgStyled src={props.src} alt={props.title} />
-        <Styles.TitleProject>{props.title}</Styles.TitleProject>
+        <Styles.ImgStyled src={src} alt={title} />
 
-        <Styles.LinksWrapper>
-          <Styles.Link
-            href={props.codeLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Code
-          </Styles.Link>
+        <Styles.InfoOverlay>
+          <Styles.TitleProject>{title}</Styles.TitleProject>
 
-          <Styles.Link
-            href={props.appLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Start app
-          </Styles.Link>
-        </Styles.LinksWrapper>
+          <Styles.LinksWrapper>
+            {codeLink && (
+              <Styles.Link
+                href={codeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Code
+              </Styles.Link>
+            )}
+            {appLink && (
+              <Styles.Link
+                href={appLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Start App
+              </Styles.Link>
+            )}
+          </Styles.LinksWrapper>
+        </Styles.InfoOverlay>
       </Styles.ImgWrapper>
     </Styles.Work>
   );

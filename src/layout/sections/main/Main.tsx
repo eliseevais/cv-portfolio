@@ -4,7 +4,7 @@ import { Button } from "../../../components/Button_Styles";
 import { Container } from "../../../components/Container_Styles";
 import { FlexWrapper } from "../../../components/FlexWrapper_Styles";
 import { Styles } from "./Main_Styles";
-import mainPhotoSmall from "../../../assets/img/2.jpg";
+import mainPhotoSmall from "../../../assets/img/2from2.jpg";
 import cvPdf from "../../../assets/Irina_Eliseeva_CV_frontend.jpg";
 
 export const Main: React.FC = () => {

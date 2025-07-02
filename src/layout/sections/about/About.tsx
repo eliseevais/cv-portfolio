@@ -1,6 +1,6 @@
 import React from "react";
 import {Container} from "../../../components/Container_Styles";
-import aboutPhotoVertical from "./../../../assets/img/1.jpg";
+import aboutPhotoVertical from "./../../../assets/img/1from2.jpg";
 import {FlexWrapper} from "../../../components/FlexWrapper_Styles";
 import {SectionTitle} from "../../../components/SectionTitle_Styles";
 import {Styles} from "./About_Styles";

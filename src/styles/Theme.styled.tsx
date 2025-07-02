@@ -4,8 +4,8 @@ export const myTheme = {
     backgroundB: "#2B2A2A",
     accentA: "#ffffff",
     accentB: "#666666",
-    brightA: "#F5E8C7",
-    brightB: "#6A4B7C",
+    brightA: "#7FDFFF",
+    brightB: "#B2A4FF",
   },
 
   media: {
