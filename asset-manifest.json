@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cv-portfolio/static/css/main.3ae9e229.css",
-    "main.js": "/cv-portfolio/static/js/main.c13289bb.js",
+    "main.js": "/cv-portfolio/static/js/main.fcad4402.js",
     "static/js/787.25eaef86.chunk.js": "/cv-portfolio/static/js/787.25eaef86.chunk.js",
     "static/media/Irina_Eliseeva_CV_frontend.jpg": "/cv-portfolio/static/media/Irina_Eliseeva_CV_frontend.f19e4dd1f7c5c269a91f.jpg",
     "static/media/2from2.jpg": "/cv-portfolio/static/media/2from2.91d58b333676c06df4b3.jpg",
@@ -34,11 +34,11 @@
     "static/media/sprite.svg": "/cv-portfolio/static/media/sprite.cd97636404eaf2dd4580b33d8cd9b866.svg",
     "index.html": "/cv-portfolio/index.html",
     "main.3ae9e229.css.map": "/cv-portfolio/static/css/main.3ae9e229.css.map",
-    "main.c13289bb.js.map": "/cv-portfolio/static/js/main.c13289bb.js.map",
+    "main.fcad4402.js.map": "/cv-portfolio/static/js/main.fcad4402.js.map",
     "787.25eaef86.chunk.js.map": "/cv-portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3ae9e229.css",
-    "static/js/main.c13289bb.js"
+    "static/js/main.fcad4402.js"
   ]
 }
