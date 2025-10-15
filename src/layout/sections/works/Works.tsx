@@ -26,7 +26,7 @@ const worksData = [
     title: "Landing Swim School",
     src: workExampleSwimSchool,
     codeLink: "https://github.com/eliseevais/swimnextjs",
-    appLink: "https://школа-плавания.online/",
+    // appLink: "https://школа-плавания.online/",
   },
   {
     title: "This portfolio",
